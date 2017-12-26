@@ -1,0 +1,30 @@
+.about {
+	font-family: $font-serif;
+	line-height: 1.8;
+	background: white;
+	overflow: auto;
+	padding-top: 45px;
+	padding-bottom: 45px;
+
+	h2 {
+		font-family: $font;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+
+	p {
+		max-width: 800px;
+		margin-bottom: 1em;
+	}
+
+	&__how {
+		font-size: 19px;
+	}
+}
+
+.about-paragraph {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+

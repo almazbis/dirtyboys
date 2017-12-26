@@ -1,0 +1,29 @@
+.section-title {
+	font-size: 2em;
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	color: $prim;
+	margin-bottom: 90px;
+	padding-right: 15px;
+	padding-left: 15px;
+
+	position: relative;
+	z-index: 1;
+
+	.container & {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+@media screen and (max-width: 575px) {
+
+	.section-title {
+		font-size: 1.6em;
+		margin-bottom: 60px;
+	}
+
+}

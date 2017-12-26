@@ -1,0 +1,35 @@
+.section {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+
+.paragraph {
+	font-family: $font-serif;
+	line-height: 1.6;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $font;
+		line-height: 1.3em;
+		margin-bottom: 1em;
+	}
+
+	p {
+		margin-bottom: 1.6em;
+		max-width: 800px;
+	}
+}
+
+.main {
+	padding-top: 90px;
+	padding-bottom: 60px;
+}
+
+@media screen and (max-width: 575px) {
+
+	.section {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+}

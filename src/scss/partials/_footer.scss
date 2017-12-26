@@ -1,0 +1,95 @@
+.footer {
+	background: $black;
+	color: #fff;
+	// mix-blend-mode: darken;
+}
+
+
+.footer-inner {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	position: relative;
+	z-index: 1;	
+}
+
+.footer-contacts {
+	padding: 0;
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 45px;
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	&__item {
+		display: block;
+		padding: 0;
+		margin-bottom: 25px;
+
+		a {
+			display: inline-block;
+			background-size: 1em;
+			padding-left: 2em;
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+
+	}
+
+
+
+	&__email a {
+		background-image: url(../assets/icons/contact-email.svg);
+	}
+
+	&__vk a {
+		background-image: url(../assets/icons/contact-vk.svg);
+		background-size: 1.3em;
+	}
+
+	&__tg a {
+		background-image: url(../assets/icons/contact-tg.svg);
+		background-size: 1.3em;
+	}
+}
+
+
+.footer-form {
+
+	h2 {
+		font-size: 1.6em;
+		margin-bottom: 20px;
+	}
+}
+
+.contact-form-result {
+	margin-top: 15px;
+
+	padding: 15px;
+	background: #fff;
+	color: $black;
+
+	display: none;
+
+	b {
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	p {
+		line-height: 1.5;
+		margin: 0;
+		margin-bottom: 5px;
+	}
+
+	&--success {
+		background: #03BEB5;
+	}
+
+	&--fail {
+		background: #F3657C;
+	}
+
+}

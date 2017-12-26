@@ -1,0 +1,212 @@
+@import 'vars';
+
+
+img {
+	max-width: 100%;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: $font;
+	font-size: 16px;
+	color: $black;
+	background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, figure, label, p, figure, table {
+	margin: 0;
+	line-height: 1.3;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+p {
+	line-height: 1.6;
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 2.0rem;
+}
+
+h5 {
+	font-size: 1.8rem;
+}
+
+h6 {
+	font-size: 1.5rem;
+}
+
+a {
+	color: $prim;
+
+	&:hover {
+		color: darken($prim, 5%);
+	}
+}
+
+
+.img-container {
+	max-width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+	img {
+		width: 100%;
+	}
+}
+
+img.img-container {
+	width: 100%;
+}
+
+
+.img-full {
+
+	img {
+		width: 100%;
+	}
+}
+
+img.img-full {
+	width: 100%;
+}
+
+
+.img-wide {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+
+	img {
+		width: 100%;
+	}
+}
+
+img.img-wide {
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.img-shadow {
+
+	img {
+		box-shadow: $shadow-light;
+	}
+}
+
+img.img-shadow {
+	box-shadow: $shadow-light;
+}
+
+.box-gray {
+	background: #eeeeef;
+	padding: 30px;
+}
+
+.box-inv {
+	background: $black;
+	color: white;
+	padding: 30px;
+}
+
+.inline-code {
+	font-family: monospace;
+	font-size: .9em;
+	font-weight: 600;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	white-space: nowrap;
+	display: inline-block;
+	background: #eee;
+}
+
+.code {
+	display: block;
+	white-space: nowrap;
+	overflow: auto;
+	font-family: monospace;
+	font-size: .9em;
+	font-weight: 600;
+	padding: 15px;
+	background: #eee;
+}
+
+@media screen and (max-width: 575px) {
+
+	.box-gray,
+	.box-inv {
+		padding: 15px;
+	}
+
+}
+
+
+
+@import 'blocks';
+@import 'titles';
+@import 'links';
+@import 'btns';
+@import 'forms';
+@import 'components/logo';
+@import 'components/menu';
+@import 'components/mention';
+@import 'components/pagination';
+@import 'components/modal-page';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'sections/about';
+@import 'sections/services';
+@import 'sections/services-singles';
+@import 'sections/portfolio';
+@import 'sections/portfolio-single';
+@import 'modules/blog';
+
+#header-particles,
+#services-particles {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	width: 100vw;
+	height: 99.9vh;
+	background-image: url('');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	overflow: hidden !important;
+}
+
+
+#services-particles {
+	height: 100%;
+}
+
+
+@import 'mods';

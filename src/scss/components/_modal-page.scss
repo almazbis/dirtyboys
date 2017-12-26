@@ -1,0 +1,90 @@
+.modal-page {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+
+	overflow: auto;
+	background: #fff;
+
+	&.expanded {
+	}
+	
+	&__header {
+		background-color: $black;
+		color: white;
+		overflow: auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-right: 45px;
+		position: sticky;
+		z-index: 0;
+		top: 0;
+	}
+
+	&__title {
+		font-size: 1.6em;
+		font-weight: bold;
+	}
+
+	figure {
+		text-align: center;
+	}
+
+	li {
+		line-height: initial;
+		margin-bottom: 10px;
+	}
+
+}
+
+
+.modal-page-close {
+	font-size: 0;
+	line-height: 0;
+	position: fixed;
+	z-index: 2;
+	top: 30px;
+	right: 45px;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background: url(../assets/icons/close-window.svg?v=1) no-repeat center;
+	background-size: 90%;
+	opacity: .5;
+
+	transition: .2s;
+	cursor: pointer;
+
+	&:focus {
+		opacity: 1;
+	}
+}
+
+.modal-page-section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+
+.modal-page-p {
+	font-family: $font-serif;
+	max-width: 700px;
+	margin: 30px auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $font;
+		margin-bottom: 1.5em;
+	}
+
+	p {
+		margin-bottom: 30px;
+	}
+}

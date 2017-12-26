@@ -1,0 +1,58 @@
+.gray {
+	background-color: #eeeeef;
+}
+
+
+.font-sans {
+	font-family: $font;
+}
+
+.font-serif {
+	font-family: $font-serif;
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-right {
+    text-align: right
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-justify {
+    text-align: justify
+}
+
+.bigger {
+	font-size: 1.3em;
+}
+
+.smaller {
+	font-size: .8em;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.fix-pos {
+	position: relative;
+	z-index: 1;
+}
+
+
+@media screen and (max-width: 576px) {
+
+	.bigger {
+		font-size: 1.1em;
+	}
+
+	.smaller {
+		font-size: .9em;
+	}
+
+}

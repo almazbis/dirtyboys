@@ -1,0 +1,33 @@
+.pagination {
+	text-align: center;
+	padding-top: 45px;
+	padding-bottom: 30px;
+
+	li {
+		display: inline-block;
+
+		a {
+			display: block;
+			padding: 10px 15px;
+			text-decoration: none;
+			font-weight: bold;
+
+			transition: .2s;
+
+			&:hover {
+				background: $prim;
+				color: #fff;
+			}
+		}
+
+		&.current {
+
+			a {
+				cursor: default;
+				opacity: .7;
+				pointer-events: none;
+			}
+		}
+	}
+
+}
