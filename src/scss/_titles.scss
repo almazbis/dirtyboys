@@ -12,6 +12,28 @@
 	position: relative;
 	z-index: 1;
 
+	&::before, &::after {
+		content: "";
+		display: block;
+		
+		height: 2px;
+		background: $prim;
+		position: absolute;
+		left: 50%;
+	}
+
+	&::before {
+		bottom: -20px;
+		width: 150px;
+		transform: translateX(-75px);
+	}
+
+	&::after {
+		bottom: -30px;
+		width: 50px;
+		transform: translateX(-25px);
+	}
+
 	.container & {
 		padding-left: 0;
 		padding-right: 0;

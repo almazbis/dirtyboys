@@ -10,8 +10,8 @@
 
 .services-item {
 	$c: &;
-	background-color: lighten($black, 10%);
-	background: linear-gradient(-45deg, lighten($black, 5%), lighten($black, 15%));
+	background-color: rgba($prim, .8);
+	// background: linear-gradient(-45deg, lighten($black, 5%), lighten($black, 15%));
 	position: relative;
 	z-index: 1;
 	display: block;
@@ -21,7 +21,7 @@
 
 	&__inner {
 		height: 100%;
-		padding: 45px;
+		padding: 35px 25px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -34,13 +34,13 @@
 	}
 
 	&__icon {
-		max-width: 80px;
+		max-width: 70px;
 		display: block;
 		margin-bottom: 30px;
 	}
 
 	&__title {
-		font-size: 1.3em;
+		font-size: 1.4em;
 		font-weight: bold;
 		margin-bottom: 30px;
 	}
@@ -84,17 +84,17 @@
 }
 
 
-@media screen and (max-width: 991px) {
+// @media screen and (max-width: 991px) {
 
 
-	.services-item {
+// 	.services-item {
 
-		&__inner {
-			padding: 30px;
-		}
-	}
+// 		&__inner {
+// 			padding: 30px;
+// 		}
+// 	}
 
-}
+// }
 
 @media screen and (max-width: 575px) {
 

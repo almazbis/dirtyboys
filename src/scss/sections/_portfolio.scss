@@ -1,3 +1,32 @@
+.btn-more {
+	font-weight: 600;
+	display: inline-block;
+	background: transparent;
+	// border: 2px solid $black;
+	// border-radius: 99px;
+	padding: .5em 0;
+
+	position: relative;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 68px;
+		height: 12px;
+		background: url(../assets/icons/btn-more-arrow.svg) no-repeat center;
+		background-size: 100%;
+		position: absolute;
+		top: 50%;
+		right: 10%;
+		transform: translateY(-50%);
+		transition: .8s;
+		opacity: 0;
+	}
+}
+
+
+
+
 .portfolio {
 	background: #fff;
 	position: relative;
@@ -126,7 +155,7 @@
 			border-color: rgba($black, .5);
 
 			&::after {
-				right: -25%;
+				right: -80%;
 				opacity: 1;
 			}
 

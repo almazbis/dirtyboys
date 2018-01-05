@@ -159,7 +159,7 @@ img.img-shadow {
 }
 
 .paragraph {
-  font-family: "PT Serif", serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
 }
 
@@ -198,6 +198,29 @@ img.img-shadow {
   padding-left: 15px;
   position: relative;
   z-index: 1;
+}
+
+.section-title::before, .section-title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #F11C3E;
+  position: absolute;
+  left: 50%;
+}
+
+.section-title::before {
+  bottom: -20px;
+  width: 150px;
+  -webkit-transform: translateX(-75px);
+          transform: translateX(-75px);
+}
+
+.section-title::after {
+  bottom: -30px;
+  width: 50px;
+  -webkit-transform: translateX(-25px);
+          transform: translateX(-25px);
 }
 
 .container .section-title {
@@ -249,33 +272,6 @@ img.img-shadow {
   cursor: pointer;
   -webkit-transition: .2s;
   transition: .2s;
-}
-
-.btn-more {
-  font-weight: 600;
-  display: inline-block;
-  background: transparent;
-  border: 2px solid #1F252D;
-  border-radius: 99px;
-  padding: .5em 1.8em;
-  position: relative;
-}
-
-.btn-more::after {
-  content: "";
-  display: block;
-  width: 68px;
-  height: 14px;
-  background: url(../assets/icons/btn-more-arrow.svg) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 50%;
-  right: 10%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: .8s;
-  transition: .8s;
-  opacity: 0;
 }
 
 .input-text {
@@ -535,7 +531,7 @@ img.img-shadow {
 }
 
 .header-menu-links ul {
-  font-family: "PT Serif", serif;
+  font-family: "Open Sans", sans-serif;
   display: block;
   padding: 0;
   margin: 0;
@@ -707,7 +703,7 @@ img.img-shadow {
 }
 
 .modal-page-p {
-  font-family: "PT Serif", serif;
+  font-family: "Open Sans", sans-serif;
   max-width: 700px;
   margin: 30px auto;
   padding-left: 15px;
@@ -753,7 +749,7 @@ img.img-shadow {
 }
 
 .header-lead__text {
-  font-family: "PT Serif", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.3em;
   font-weight: bold;
   line-height: 1.7;
@@ -890,7 +886,7 @@ img.img-shadow {
 }
 
 .about {
-  font-family: "PT Serif", serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.8;
   background: white;
   overflow: auto;
@@ -929,8 +925,7 @@ img.img-shadow {
 }
 
 .services-item {
-  background-color: #343e4b;
-  background: linear-gradient(-45deg, #29313c, #3e4a5a);
+  background-color: rgba(241, 28, 62, 0.8);
   position: relative;
   z-index: 1;
   display: block;
@@ -941,7 +936,7 @@ img.img-shadow {
 
 .services-item__inner {
   height: 100%;
-  padding: 45px;
+  padding: 35px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,13 +956,13 @@ img.img-shadow {
 }
 
 .services-item__icon {
-  max-width: 80px;
+  max-width: 70px;
   display: block;
   margin-bottom: 30px;
 }
 
 .services-item__title {
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -1012,12 +1007,6 @@ img.img-shadow {
 
 .services-item:hover .services-item__text, .services-item:focus .services-item__text {
   opacity: 1;
-}
-
-@media screen and (max-width: 991px) {
-  .services-item__inner {
-    padding: 30px;
-  }
 }
 
 @media screen and (max-width: 575px) {
@@ -1156,6 +1145,31 @@ img.img-shadow {
   }
 }
 
+.btn-more {
+  font-weight: 600;
+  display: inline-block;
+  background: transparent;
+  padding: .5em 0;
+  position: relative;
+}
+
+.btn-more::after {
+  content: "";
+  display: block;
+  width: 68px;
+  height: 12px;
+  background: url(../assets/icons/btn-more-arrow.svg) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: .8s;
+  transition: .8s;
+  opacity: 0;
+}
+
 .portfolio {
   background: #fff;
   position: relative;
@@ -1291,7 +1305,7 @@ img.img-shadow {
 }
 
 .portfolio-item-inner:hover .btn-more::after {
-  right: -25%;
+  right: -80%;
   opacity: 1;
 }
 
@@ -1361,7 +1375,7 @@ img.img-shadow {
 }
 
 .portfolio-single-goals {
-  font-family: "PT Serif", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.3em;
   max-width: 700px;
   margin: 60px auto;
@@ -1554,7 +1568,7 @@ img.img-shadow {
 }
 
 .blog-preview__excerpt {
-  font-family: "PT Serif", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -1575,7 +1589,7 @@ img.img-shadow {
 }
 
 .blog-single__text {
-  font-family: "PT Serif", serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
 }
 
@@ -1652,8 +1666,12 @@ img.img-shadow {
   font-family: "Montserrat", sans-serif;
 }
 
-.font-serif {
-  font-family: "PT Serif", serif;
+.font-text {
+  font-family: "Open Sans", sans-serif;
+}
+
+.light {
+  font-weight: 300;
 }
 
 .text-left {
