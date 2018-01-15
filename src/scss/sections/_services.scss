@@ -11,13 +11,14 @@
 .services-item {
 	$c: &;
 	background-color: rgba($prim, .8);
-	// background: linear-gradient(-45deg, lighten($black, 5%), lighten($black, 15%));
 	position: relative;
 	z-index: 1;
 	display: block;
 	height: 100%;
 	color: white;
 	text-decoration: none;
+
+	transition: $transition;
 
 	&__inner {
 		height: 100%;
@@ -30,6 +31,7 @@
 	&:hover, &:focus {
 		text-decoration: none;
 		color: white;
+		background-color: $prim;
 		outline: none;
 	}
 
@@ -49,7 +51,7 @@
 		font-size: 14px;
 		line-height: 1.8;
 		opacity: .5;
-		transition: .4s;
+		transition: $transition;
 	}
 
 	&__more {
@@ -66,7 +68,7 @@
 			background: url(../assets/icons/arrow-right-white.svg) no-repeat right 45px center;
 			background-size: auto 1em;
 			opacity: .3;
-			transition: .4s;
+			transition: $transition;
 		}
 
 

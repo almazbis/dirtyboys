@@ -1,10 +1,12 @@
 .header-menu {
+	font-family: $font;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	width: 100%;
 	transition: .5s;
 
 	&__contact-cta {
+		font-weight: 500;
 		position: relative;
 		z-index: 1;
 		padding: 3px;
@@ -25,20 +27,20 @@
 
 			&:hover {
 				background-color: lighten($prim, 10%);
-				box-shadow: $shadow-light-hover;
-				transform: translateY(-2px);
+				// box-shadow: $shadow-light-hover;
+				// transform: translateY(-2px);
 			}
 
 			&:focus {
 				outline: none;
-				box-shadow: $shadow-light-hover;
-				transform: translateY(-2px);
+				// box-shadow: $shadow-light-hover;
+				// transform: translateY(-2px);
 			}
 
 			&:active {
-				box-shadow: none;
+				// box-shadow: none;
 				background-color: darken($prim, 5%);
-				transform: translateY(1px);
+				// transform: translateY(1px);
 			}
 
 		}
@@ -52,7 +54,6 @@
 	align-items: center;
 
 	ul {
-		font-family: $font-text;
 		display: block;
 		padding: 0;
 		margin: 0;

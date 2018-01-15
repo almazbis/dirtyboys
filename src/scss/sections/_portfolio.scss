@@ -2,8 +2,6 @@
 	font-weight: 600;
 	display: inline-block;
 	background: transparent;
-	// border: 2px solid $black;
-	// border-radius: 99px;
 	padding: .5em 0;
 
 	position: relative;
@@ -12,9 +10,9 @@
 		content: "";
 		display: block;
 		width: 68px;
-		height: 12px;
+		height: 10px;
 		background: url(../assets/icons/btn-more-arrow.svg) no-repeat center;
-		background-size: 100%;
+		background-size: contain;
 		position: absolute;
 		top: 50%;
 		right: 10%;
@@ -38,8 +36,8 @@
 	display: block;
 	width: 55%;
 	height: auto;
-	box-shadow: $shadow-light;
-	min-height: 200px;
+	// box-shadow: $shadow-light;
+	// min-height: 200px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -88,8 +86,9 @@
 	}
 
 	&__title {
-		font-weight: 900;
 		font-size: 2.6em;
+		font-weight: 900;
+		line-height: 1.1;
 		margin-bottom: 25px;
 
 		transition: .4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -140,7 +139,7 @@
 		.portfolio-item-thumb {
 			opacity: .6;
 			transform: translateY(-15px);
-			box-shadow: $shadow-light-hover;
+			// box-shadow: $shadow-light;
 		}
 
 		#{$item}__title {
@@ -216,6 +215,7 @@
 		margin-right: auto;
 		margin-left: auto;
 		transform: none;
+		margin-top: 30px;
 	}
 
 

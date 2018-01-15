@@ -8,3 +8,7 @@ $font-text: 'Open Sans', sans-serif;
 
 $shadow-light: 0 10px 20px rgba($black, .15);
 $shadow-light-hover: 0 20px 25px rgba($black, .1);
+
+$transition: .4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$transition-fast: .25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$transition-slow: .7s cubic-bezier(0.455, 0.03, 0.515, 0.955);

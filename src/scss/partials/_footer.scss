@@ -1,13 +1,13 @@
 .footer {
-	background: $black;
+	background: $black url(../assets/img/footer.jpg) no-repeat center;
+	background-size: cover;
 	color: #fff;
-	// mix-blend-mode: darken;
 }
 
 
 .footer-inner {
-	padding-top: 45px;
-	padding-bottom: 45px;
+	padding-top: 75px;
+	padding-bottom: 75px;
 	position: relative;
 	z-index: 1;	
 }
@@ -90,6 +90,16 @@
 
 	&--fail {
 		background: #F3657C;
+	}
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+	.footer-inner {
+		padding-top: 45px;
+		padding-bottom: 45px;
 	}
 
 }

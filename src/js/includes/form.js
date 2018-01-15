@@ -27,25 +27,6 @@ var mailResult = function(result, formid){
 
 }
 
-// $(function(){
-//     $('.contactForm').submit(function(e){
-//         e.preventDefault();
-
-//         theFormId = '#' + $(this).attr('id');
-
-//         // Send the request
-//         $.post('contact.php', {
-//             formcontactmethod: $(theFormId + ' .formcontactmethod').val(),
-//             formmessage: $(theFormId + ' .formmessage').val(),
-//             // noSpamInput: $(theFormId + ' .noSpamInput').val()
-//         }, function(d){
-//             mailResult(d, theFormId);
-//             console.log(d);
-//         });
-
-//     });
-// });
-
 $(function(){
     $('.contactForm').submit(function(e){
         e.preventDefault();

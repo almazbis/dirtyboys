@@ -291,8 +291,8 @@ img.img-shadow {
   border: 2px solid transparent;
   border-bottom-color: #1F252D;
   background: none;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .input-text input:focus, .input-text textarea:focus {
@@ -301,6 +301,7 @@ img.img-shadow {
 
 .input-text input:focus ~ .input-title, .input-text textarea:focus ~ .input-title {
   opacity: 1;
+  top: 0;
 }
 
 .input-text textarea {
@@ -322,14 +323,14 @@ img.img-shadow {
 
 .input-title {
   font-size: 13px;
-  line-height: 1.3;
+  line-height: 1.2;
   margin-bottom: 5px;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   opacity: 0;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .inputs .input-text {
@@ -467,6 +468,7 @@ img.img-shadow {
 }
 
 .header-menu {
+  font-family: "Montserrat", sans-serif;
   margin-top: 30px;
   margin-bottom: 30px;
   width: 100%;
@@ -475,6 +477,7 @@ img.img-shadow {
 }
 
 .header-menu__contact-cta {
+  font-weight: 500;
   position: relative;
   z-index: 1;
   padding: 3px;
@@ -499,26 +502,14 @@ img.img-shadow {
 
 .header-menu__contact-cta button:hover {
   background-color: #f44c67;
-  -webkit-box-shadow: 0 20px 25px rgba(31, 37, 45, 0.1);
-          box-shadow: 0 20px 25px rgba(31, 37, 45, 0.1);
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
 }
 
 .header-menu__contact-cta button:focus {
   outline: none;
-  -webkit-box-shadow: 0 20px 25px rgba(31, 37, 45, 0.1);
-          box-shadow: 0 20px 25px rgba(31, 37, 45, 0.1);
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
 }
 
 .header-menu__contact-cta button:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
   background-color: #e50e30;
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
 }
 
 .header-menu-links {
@@ -531,7 +522,6 @@ img.img-shadow {
 }
 
 .header-menu-links ul {
-  font-family: "Open Sans", sans-serif;
   display: block;
   padding: 0;
   margin: 0;
@@ -657,7 +647,7 @@ img.img-shadow {
   padding-right: 45px;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 0;
+  z-index: 2;
   top: 0;
 }
 
@@ -679,7 +669,7 @@ img.img-shadow {
   font-size: 0;
   line-height: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 30px;
   right: 45px;
   width: 30px;
@@ -750,12 +740,12 @@ img.img-shadow {
 
 .header-lead__text {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: bold;
-  line-height: 1.7;
+  line-height: 1.6;
   padding-left: 90px;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 15px;
   position: relative;
   z-index: 1;
 }
@@ -802,13 +792,14 @@ img.img-shadow {
 }
 
 .footer {
-  background: #1F252D;
+  background: #1F252D url(../assets/img/footer.jpg) no-repeat center;
+  background-size: cover;
   color: #fff;
 }
 
 .footer-inner {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   position: relative;
   z-index: 1;
 }
@@ -885,6 +876,13 @@ img.img-shadow {
   background: #F3657C;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-inner {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
 .about {
   font-family: "Open Sans", sans-serif;
   line-height: 1.8;
@@ -932,6 +930,8 @@ img.img-shadow {
   height: 100%;
   color: white;
   text-decoration: none;
+  -webkit-transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .services-item__inner {
@@ -952,6 +952,7 @@ img.img-shadow {
 .services-item:hover, .services-item:focus {
   text-decoration: none;
   color: white;
+  background-color: #F11C3E;
   outline: none;
 }
 
@@ -971,8 +972,8 @@ img.img-shadow {
   font-size: 14px;
   line-height: 1.8;
   opacity: .5;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .services-item__more {
@@ -996,8 +997,8 @@ img.img-shadow {
   background: url(../assets/icons/arrow-right-white.svg) no-repeat right 45px center;
   background-size: auto 1em;
   opacity: .3;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .services-item:hover .services-item__more span, .services-item:focus .services-item__more span {
@@ -1093,7 +1094,7 @@ img.img-shadow {
   width: 100%;
   height: 200px;
   color: #fff;
-  background-color: #F11C3E;
+  background-color: #eeeeef;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1157,9 +1158,9 @@ img.img-shadow {
   content: "";
   display: block;
   width: 68px;
-  height: 12px;
+  height: 10px;
   background: url(../assets/icons/btn-more-arrow.svg) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
   position: absolute;
   top: 50%;
   right: 10%;
@@ -1180,9 +1181,6 @@ img.img-shadow {
   display: block;
   width: 55%;
   height: auto;
-  -webkit-box-shadow: 0 10px 20px rgba(31, 37, 45, 0.15);
-          box-shadow: 0 10px 20px rgba(31, 37, 45, 0.15);
-  min-height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1228,8 +1226,9 @@ img.img-shadow {
 }
 
 .portfolio-item__title {
-  font-weight: 900;
   font-size: 2.6em;
+  font-weight: 900;
+  line-height: 1.1;
   margin-bottom: 25px;
   -webkit-transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -1286,8 +1285,6 @@ img.img-shadow {
   opacity: .6;
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
-  -webkit-box-shadow: 0 20px 25px rgba(31, 37, 45, 0.1);
-          box-shadow: 0 20px 25px rgba(31, 37, 45, 0.1);
 }
 
 .portfolio-item-inner:hover .portfolio-item__title {
@@ -1342,6 +1339,7 @@ img.img-shadow {
     margin-left: auto;
     -webkit-transform: none;
             transform: none;
+    margin-top: 30px;
   }
 }
 
