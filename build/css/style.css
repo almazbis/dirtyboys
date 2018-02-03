@@ -295,8 +295,80 @@ img.img-shadow {
   transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
+.input-text input::-webkit-input-placeholder, .input-text textarea::-webkit-input-placeholder {
+  position: relative;
+  top: 0;
+  -webkit-transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.input-text input:-ms-input-placeholder, .input-text textarea:-ms-input-placeholder {
+  position: relative;
+  top: 0;
+  -webkit-transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.input-text input::-ms-input-placeholder, .input-text textarea::-ms-input-placeholder {
+  position: relative;
+  top: 0;
+  -webkit-transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.input-text input::placeholder, .input-text textarea::placeholder {
+  position: relative;
+  top: 0;
+  -webkit-transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.input-text input:-ms-input-placeholder, .input-text textarea:-ms-input-placeholder {
+  position: relative;
+  top: 0;
+  -webkit-transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.input-text input::-ms-input-placeholder, .input-text textarea::-ms-input-placeholder {
+  position: relative;
+  top: 0;
+  -webkit-transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
 .input-text input:focus, .input-text textarea:focus {
   outline: none;
+}
+
+.input-text input:focus::-webkit-input-placeholder, .input-text textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+  top: -5px;
+}
+
+.input-text input:focus:-ms-input-placeholder, .input-text textarea:focus:-ms-input-placeholder {
+  color: transparent;
+  top: -5px;
+}
+
+.input-text input:focus::-ms-input-placeholder, .input-text textarea:focus::-ms-input-placeholder {
+  color: transparent;
+  top: -5px;
+}
+
+.input-text input:focus::placeholder, .input-text textarea:focus::placeholder {
+  color: transparent;
+  top: -5px;
+}
+
+.input-text input:focus:-ms-input-placeholder, .input-text textarea:focus:-ms-input-placeholder {
+  color: transparent;
+  top: -5px;
+}
+
+.input-text input:focus::-ms-input-placeholder, .input-text textarea:focus::-ms-input-placeholder {
+  color: transparent;
+  top: -5px;
 }
 
 .input-text input:focus ~ .input-title, .input-text textarea:focus ~ .input-title {
@@ -739,9 +811,9 @@ img.img-shadow {
 }
 
 .header-lead__text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.6;
   padding-left: 90px;
   margin: 0;
@@ -1712,4 +1784,46 @@ img.img-shadow {
   .smaller {
     font-size: .9em;
   }
+}
+
+.dem-blobs {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  width: 100%;
+  max-width: 100vw;
+  height: 800px;
+  min-height: 100vh;
+  overflow: visible;
+  pointer-events: none;
+}
+
+#blobs-svg {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 800px;
+  top: 50%;
+  left: 0;
+  margin-top: -400px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+rect {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.blobs {
+  -webkit-filter: url("#goo");
+  filter: url("#goo");
+}
+
+.blob {
+  fill: white;
+}
+
+.bg-blob {
+  opacity: .08;
 }

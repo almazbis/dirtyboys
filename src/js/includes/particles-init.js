@@ -4,7 +4,7 @@ if ($("#header-particles").length){
     {
       "particles": {
         "number": {
-          "value": 80,
+          "value": 70,
           "density": {
             "enable": true,
             "value_area": 800
@@ -26,7 +26,7 @@ if ($("#header-particles").length){
           }
         },
         "opacity": {
-          "value": 0.4,
+          "value": 0.3,
           "random": false,
           "anim": {
             "enable": false,

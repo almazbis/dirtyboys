@@ -18,8 +18,41 @@
 
 		transition: $transition;
 
+		&::placeholder { 
+			position: relative;
+			top: 0;
+			transition: $transition-fast;
+		}
+
+		&:-ms-input-placeholder {
+			position: relative;
+			top: 0;
+			transition: $transition-fast;
+		}
+
+		&::-ms-input-placeholder {
+			position: relative;
+			top: 0;
+			transition: $transition-fast;
+		}
+
 		&:focus {
 			outline: none;
+
+			&::placeholder { 
+			    color: transparent;
+			    top: -5px;
+			}
+
+			&:-ms-input-placeholder {
+			    color: transparent;
+			    top: -5px;
+			}
+
+			&::-ms-input-placeholder {
+			    color: transparent;
+			    top: -5px;
+			}
 
 			~ .input-title {
 				opacity: 1;
