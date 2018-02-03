@@ -22,9 +22,13 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 		padding-right: 45px;
-		position: sticky;
 		z-index: 2;
 		top: 0;
+
+		@media screen and (min-width: 768px) {
+			position: sticky;
+		}
+
 	}
 
 	&__title {
@@ -47,7 +51,7 @@
 .modal-page-close {
 	font-size: 0;
 	line-height: 0;
-	position: fixed;
+	position: absolute;
 	z-index: 3;
 	top: 30px;
 	right: 45px;
@@ -60,6 +64,10 @@
 
 	transition: .2s;
 	cursor: pointer;
+
+	@media screen and (min-width: 768px) {
+		position: fixed;
+	}
 
 	&:focus {
 		opacity: 1;

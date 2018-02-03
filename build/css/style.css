@@ -717,10 +717,15 @@ img.img-shadow {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 45px;
-  position: -webkit-sticky;
-  position: sticky;
   z-index: 2;
   top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-page__header {
+    position: -webkit-sticky;
+    position: sticky;
+  }
 }
 
 .modal-page__title {
@@ -740,7 +745,7 @@ img.img-shadow {
 .modal-page-close {
   font-size: 0;
   line-height: 0;
-  position: fixed;
+  position: absolute;
   z-index: 3;
   top: 30px;
   right: 45px;
@@ -753,6 +758,12 @@ img.img-shadow {
   -webkit-transition: .2s;
   transition: .2s;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-page-close {
+    position: fixed;
+  }
 }
 
 .modal-page-close:focus {
@@ -1099,9 +1110,55 @@ img.img-shadow {
   }
 }
 
+.service-prices-table {
+  width: 1110px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.service-prices-table-header {
+  font-weight: bold;
+  color: #F11C3E;
+}
+
+.service-prices-table-row > .col, .service-prices-table-row [class*="col-"],
+.service-prices-table-header > .col,
+.service-prices-table-header [class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.service-prices-table-row {
+  border-top: 1px solid rgba(31, 37, 45, 0.1);
+}
+
+@media screen and (min-width: 576px) {
+  .service-prices-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .service-prices-table-header {
+    display: none;
+  }
+  .service-prices-table-row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .service-prices-table-row > .col, .service-prices-table-row [class*="col-"],
+  .service-prices-table-header > .col,
+  .service-prices-table-header [class*="col-"] {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
 .service-prices {
   padding-left: 15px;
   padding-right: 15px;
+  overflow-x: auto;
 }
 
 .service-prices table {

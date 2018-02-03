@@ -1,10 +1,73 @@
-.services-single {
+.service-prices-table {
+	width: 1110px;
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+// .service-prices-table-header {
+// 	display: flex;
+
+// 	> * {
+// 		flex: 1;
+// 		padding: 15px;
+// 	}
+// }
+.service-prices-table-header {
+		font-weight: bold;
+		color: $prim;
+}
+
+.service-prices-table-row,
+.service-prices-table-header {
+
+	> .col, [class*="col-"] {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+.service-prices-table-row {
+	border-top: 1px solid rgba($black, .1);
+}
+
+
+@media screen and (min-width: 576px) {
+
+	.service-prices-mobile {
+		display: none;
+	}
 
 }
+
+@media screen and (max-width: 575px) {
+
+	.service-prices-table-header {
+		display: none;
+	}
+
+	.service-prices-table-row {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.service-prices-table-row,
+	.service-prices-table-header {
+
+		> .col, [class*="col-"] {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+	}
+
+
+}
+
 
 .service-prices {
 	padding-left: 15px;
 	padding-right: 15px;
+	overflow-x: auto;
 
 	table {
 		width: 1110px;
