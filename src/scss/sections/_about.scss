@@ -1,7 +1,6 @@
 .about {
 	font-family: $font-text;
 	line-height: 1.8;
-	background: white;
 	overflow: auto;
 	padding-top: 45px;
 	padding-bottom: 45px;
@@ -13,18 +12,27 @@
 	}
 
 	p {
-		max-width: 800px;
-		margin-bottom: 1em;
+		// max-width: 800px;
+		margin-bottom: 1.5em;
 	}
 
-	&__how {
-		font-size: 19px;
-	}
-}
-
-.about-paragraph {
-	margin-top: 30px;
-	margin-bottom: 60px;
 }
 
 
+
+
+@media screen and (min-width: 768px) {
+
+	.about {
+
+		&__text {
+			font-size: 18px;
+		}
+
+		&__paragraph {
+			margin-bottom: 60px;
+		}
+		
+	}
+
+}

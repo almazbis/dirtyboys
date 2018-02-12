@@ -54,6 +54,7 @@ gulp.task('browserSync', function() {
       server: {
          baseDir: 'build'
       },
+      open: false
       // files: ['./build/*.html', './build/js/*.js']
    })
 });

@@ -10,8 +10,22 @@
 
 
 .header-lead {
-	margin-top: 140px;
-	margin-bottom: 200px;
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin-top: 120px;
+	margin-bottom: 150px;
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100%;
+		width: 70%;
+		background: $gray-light;
+	}
 
 	&__content {
 		display: flex;
@@ -20,26 +34,65 @@
 	&__title {
 		margin: 0;
 		font-size: 3.7em;
+		line-height: 1.2;
 		font-weight: bold;
 		color: $prim;
 		position: relative;
 		z-index: 1;
+
+		> span {
+			background: -webkit-linear-gradient(45deg, #CC0F94, #F11C3E);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+
+			display: block;
+			width: 100%;
+		}
+
+		&::before {
+			content: "Мы — indimedia";
+			color: rgba($black, .04);
+
+			display: block;
+			position: absolute;
+			z-index: -1;
+			max-width: 360px;
+			left: 40px;
+			transform: scale(1.5);
+
+			pointer-events: none;
+		}
+
 	}
 
 	&__text {
 		font-family: $font;
 		font-size: 1.5em;
-		font-weight: 600;
+		font-weight: normal;
 		line-height: 1.6;
+
+		position: relative;
+		// padding-top: 60px;
 		padding-left: 90px;
 		margin: 0;
 		margin-top: 15px;
-		position: relative;
 		z-index: 1;
 	}
 
 }
 
+
+@media screen and (max-width: 1440px) {
+
+	.header-lead {
+		position: relative;
+		padding-top: 75px;
+		padding-bottom: 75px;
+		margin-top: 90px;
+		margin-bottom: 120px;
+	}
+
+}
 
 @media screen and (max-width: 991px) {
 

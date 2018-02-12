@@ -1,16 +1,11 @@
-@@include('./vendor/rellax.min.js');
-@@include('./vendor/particles.min.js');
-
 $(document).ready(function(){
+
+	@@include('./includes/smooth-scroll.js');
 
 	@@include('./includes/modals.js');
 
-	@@include('./includes/particles-init.js')
+	@@include('./includes/menu-toggle.js')
 
 	@@include('./includes/form.js');
 
-	@@include('./includes/_init-blobs.js');
-
 });
-
-

@@ -1,22 +1,25 @@
-
 <header class="header header--home">
 
-	<img class="digital-bg rellax" data-rellax-speed="-2" src="assets/img/bgword.svg"></img>
-
-	<!-- @@include('../components/bg-blobs.html') -->
-
-	<nav class="header-menu">
+	<nav class="header-nav">
 		<div class="container">
-			<div class="header-menu-links">
-				<a href="/" class="logo">indimedia</a>
-				<div class="header-menu__contact-cta">
-					<button class="smoothScroll" href="#contact">Связаться</button>
+			<div class="row align-items-center">
+
+				<div class="col-auto header-nav-col header-nav-col--logo"><a href="/" class="logo">indimedia</a></div>
+
+				<div class="col header-nav-col header-nav-col--hamburger">
+					<button class="menu-btn btn-hamburger js-menu-btn">Меню<span></span><span></span></button>	
 				</div>
-				<ul>
-					<li><a href="#services" class="smoothScroll">Услуги</a></li>
-					<li><a href="#portfolio" class="smoothScroll">Портфолио</a></li>
-					<!-- <li><a href="#contact" class="smoothScroll">Контакты</a></li> -->
-				</ul>
+
+				<div class="col-12 col-sm header-nav-col header-nav-col--menu">
+					<div class="menu js-menu-links">
+						<ul>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Портфолио</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</nav>
@@ -24,14 +27,12 @@
 	<div class="header-lead">
 		<div class="container">
 			<div class="header-lead__content">
-				<h1 class="header-lead__title">Мы — <br />indimedia</h1>
+				<h1 class="header-lead__title"><span>Мы — <br />indimedia</span></h1>
 				<div class="header-lead__text">
-					<p>рекламное агентство.<br />Мы поставляем нашим клиентам свежие лиды и совершенствуем их бизнес в интернете.</p>
+					<p>рекламное агентство. <br />Сможем наладить поток клиентов для вашего бизнеса используя все возможности интернета.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div id="header-particles"></div>
 
 </header>

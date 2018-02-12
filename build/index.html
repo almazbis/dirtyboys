@@ -10,33 +10,54 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,400i,500,600,700,700i,800,900&amp;subset=cyrillic" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,700i,800&amp;subset=cyrillic" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,700i,800&amp;subset=cyrillic" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Tinos:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+
+
 <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/style.css?v=8.4">
+<link rel="stylesheet" href="css/style.css?v=2.2">
 </head>
 <body>
 
 
+<div class="grid-bg">
+	<div class="container">
+		<div class="row justify-content-between no-gutters">
+			<div class="grid-bg__column col-auto"><span></span></div>
+			<div class="grid-bg__column col-auto"><span></span></div>
+			<div class="grid-bg__column col-auto"><span></span></div>
+			<div class="grid-bg__column col-auto"><span></span></div>
+			<div class="grid-bg__column col-auto"><span></span></div>
+			<div class="grid-bg__column col-auto"><span></span></div>
+		</div>
+	</div>
+</div>
+
+
 <header class="header header--home">
 
-	<img class="digital-bg rellax" data-rellax-speed="-2" src="assets/img/bgword.svg"></img>
-
-	
-
-	<nav class="header-menu">
+	<nav class="header-nav">
 		<div class="container">
-			<div class="header-menu-links">
-				<a href="/" class="logo">indimedia</a>
-				<div class="header-menu__contact-cta">
-					<button class="smoothScroll" href="#contact">Связаться</button>
+			<div class="row align-items-center">
+
+				<div class="col-auto header-nav-col header-nav-col--logo"><a href="/" class="logo">indimedia</a></div>
+
+				<div class="col header-nav-col header-nav-col--hamburger">
+					<button class="menu-btn btn-hamburger js-menu-btn">Меню<span></span><span></span></button>	
 				</div>
-				<ul>
-					<li><a href="#services" class="smoothScroll">Услуги</a></li>
-					<li><a href="#portfolio" class="smoothScroll">Портфолио</a></li>
-					<!-- <li><a href="#contact" class="smoothScroll">Контакты</a></li> -->
-				</ul>
+
+				<div class="col-12 col-sm header-nav-col header-nav-col--menu">
+					<div class="menu js-menu-links">
+						<ul>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Портфолио</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</nav>
@@ -44,45 +65,45 @@
 	<div class="header-lead">
 		<div class="container">
 			<div class="header-lead__content">
-				<h1 class="header-lead__title">Мы — <br />indimedia</h1>
+				<h1 class="header-lead__title"><span>Мы — <br />indimedia</span></h1>
 				<div class="header-lead__text">
-					<p>рекламное агентство.<br />Мы поставляем нашим клиентам свежие лиды и совершенствуем их бизнес в интернете.</p>
+					<p>рекламное агентство. <br />Сможем наладить поток клиентов для вашего бизнеса используя все возможности интернета.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="header-particles"></div>
-
 </header>
 
 
 
-<section class="about fix-pos">
+<section class="about">
 	<div class="container">
 		<article class="about__content">
 			<div class="about__text">
 
-				<div class="about-paragraph">
+				<div class="about__paragraph">
 					<div class="row">
-						<div class="col-12 col-lg">
+						<div class="col-12 col-xl-1"></div>
+						<div class="col-12 col-md-7 col-xl-6">
 							<p>Интернет — это дикие джунгли, где между бизнесами идет постоянная борьба за выживание. Тот, кто расслабится и пропустит мимо себя тренды и новую информацию, быстро погибнет от рук конкурентов.</p>
-							<p>Только 7% бизнес-проектов в интернете могут конкурировать между собой – остальные неактуальны и зачастую умирают, принося владельцам только убытки.</p>
+							<p>Только <b>7%</b> бизнес-проектов в интернете могут конкурировать между собой – остальные неактуальны и зачастую умирают, принося владельцам только убытки.</p>
 							<p>Бизнес будет прибыльным в интернете только если он будет постоянно и во всем совершенствоваться. От площадок размещения до текстов под тизерами.</p>
 						</div>
-						<div class="col-auto col-lg-1"></div>
-						<div class="col-12 col-lg">
-							<p>Мы знаем как и почему бизнес в интернете становится прибыльным и в дальнейшем только растет. Наша команда состоит из людей, которые занимаются этим уже 4 года.</p>
-							<p>Мы не задираем цифры, не делаем сами себе сайты в портфолио, не крадем проекты других агенств и студий. Для нас важно качество работы.<p/>
-							<p>Мы - 15 специалистов из разных стран, за 4 года у нас больше 40 выполненных работ. Мы поможем с любым вопросом, спрашивайте.</p>
-						</div> 
+						<div class="col-12 col-xl"></div>
 					</div>
 				</div>
 
-				<div class="about-paragraph about__how">
-					<h2>Как мы работаем</h2>
-					<p>Наша команда всегда находится на волне последних трендов и узнает в числе первых о новых инструментах разработки и продвижения.</p>
-					<p>Листайте вниз, чтобы узнать о наших услугах и посмотреть что мы умеем, либо <a href="#contact" class="link-fancy smoothScroll">свяжитесь с нами</a> чтобы задать вопрос или заказать услугу.</p>
+				<div class="about__paragraph">
+					<div class="row">
+						<div class="col-12 col-md-3 col-xl-4"></div>
+						<div class="col-12 col-md-7 col-xl-6">
+							<p>Мы знаем как и почему бизнес в интернете становится прибыльным и в дальнейшем только растет. Наша команда состоит из людей, которые занимаются этим уже <b>4 года</b>.</p>
+							<p>Мы не задираем цифры, не делаем сами себе сайты в портфолио, не крадем проекты других агенств и студий. Для нас важно качество работы.<p/>
+							<p>Мы - 15 специалистов из разных стран, за 4 года у нас больше 40 выполненных работ. Мы поможем с любым вопросом, спрашивайте.</p>
+						</div> 
+						<div class="col-12 col-xl"></div>
+					</div>
 				</div>
 				
 			<div/>
@@ -91,453 +112,78 @@
 </section>
 
 
-<section id="services" class="section services">
+<section id="section-services" class="section services-section">
 
-	<h2 class="section-title">Что мы делаем</h2>
+	<div class="container"><h2 class="section-title">Что мы делаем</h2></div>
 
 	<div class="container">
-		<div class="row">
+		<div class="services-row">
 
-			<!-- <div class="col-12 col-lg-4 services-col">
-				<a href="#services1" class="services-item modalTrigger">
+			<div class="services-col">
+				<a href="services-marketing.html" class="services-item">
 					<div class="services-item__inner">
-						<img class="services-item__icon" src="assets/icons/services1.svg?v=1" alt="">
-						<div class="services-item__title">Аналитика бизнеса и маркетинговых стратегий</div>
+						<img class="services-item__icon" src="assets/img/services-marketing.svg" alt="">
+						<div class="services-item__title">Интернет-маркетинг</div>
+						<div class="services-item__subtitle">Контекстная реклама, SMM, SEO</div>
 						<div class="services-item__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo nostrum odit dolores adipisci accusamus, necessitatibus. Animi, expedita accusantium. Magni facilis quod perspiciatis assumenda soluta quam dolor voluptatum reiciendis quidem!</p>
+							<p>Продвижение в конкурентной борьбе или поражение центральной нервной системы? Мы предлагаем вам продвигаться всеми имеющимися у нас способами. Можем окунуть контекстной рекламой в ревущий океан продаж или вывести в десятку поисковой выдачи.</p>
 						</div>
-						<div class="services-item__more"><span>Подробнее</span></div>	
-					</div>
-				</a>
-			</div> -->
-
-			<div class="col-12 col-lg-4 services-col">
-				<a href="#services2" class="services-item modalTrigger">
-					<div class="services-item__inner">
-						<img class="services-item__icon" src="assets/icons/services2.svg?v=1" alt="">
-						<div class="services-item__title">Интернет-маркетинг: контекстная реклама, SMM, SEO</div>
-						<div class="services-item__text">
-							<p>Продвижение в конкурентной борьбе или поражение центральной нервной системы? Мы предлагаем вам продвигаться всеми имеющимися у нас способами. Можем окунуть контекстной рекламой в ревущий океан продаж или вывести в десятку поисковой выдачи, например.</p>
-						</div>
-						<div class="services-item__more"><span>Подробнее</span></div>
 					</div>
 				</a>
 			</div>
 
-			<div class="col-12 col-lg-4 services-col">
-				<a href="#services3" class="services-item modalTrigger">
+			<div class="services-col">
+				<a href="services-marketing.html" class="services-item">
 					<div class="services-item__inner">
-						<img class="services-item__icon" src="assets/icons/services3.svg?v=1" alt="">
-						<div class="services-item__title">Брендинг и графический<br />дизайн</div>
+						<img class="services-item__icon" src="assets/img/services-gd.svg" alt="">
+						<div class="services-item__title">Графический дизайн</div>
+						<div class="services-item__subtitle">Брендинг, фирменный стиль</div>
 						<div class="services-item__text">
-								<p>Правильно спроектированный интерфейс позволяет посетителям сконцентрироваться на решении задач, а не на его работе. Мы создаем полезные и эффективные решения с помощью индивидуального подхода в дизайне. Нам важно, чтобы посетители разработанных нами ресурсов находили интерфейсы чрезвычайно дружественными и приятными в использовании.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum id iste maxime dolore vero earum cum rerum, distinctio omnis sed iure sapiente, autem magni pariatur expedita! Impedit perferendis debitis iure odio, illo a, assumenda repudiandae laudantium, fuga ipsam cum odit itaque! At esse hic, praesentium autem nostrum facere pariatur. Recusandae, similique rem. Ab itaque, ad inventore.</p>
 						</div>
-						<div class="services-item__more"><span>Подробнее</span></div>
 					</div>
 				</a>
 			</div>
 
-			<div class="col-12 col-lg-4 services-col">
-				<a href="#services4" class="services-item modalTrigger">
+			<div class="services-col">
+				<a href="services-marketing.html" class="services-item">
 					<div class="services-item__inner">
-						<img class="services-item__icon" src="assets/icons/services4.svg?v=1" alt="">
-						<div class="services-item__title">Сайты и приложения (дизайн интерфейса и разработка)</div>
+						<img class="services-item__icon" src="assets/img/services-websites.svg" alt="">
+						<div class="services-item__title">Сайты</div>
+						<div class="services-item__subtitle">Дизайн, разработка и продвижение сайтов</div>
 						<div class="services-item__text">
-							<p>Проектируем и разрабатываем ресурсы любой сложности – от небольших лэндингов и визиток, до масштабных порталов и интернет-магазинов. Мы оживим любую идею.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magni vitae impedit! Iure quibusdam delectus modi voluptas nisi! Harum pariatur ullam sequi delectus itaque et suscipit sed, aperiam illo eaque.</p>
 						</div>
-						<div class="services-item__more"><span>Подробнее</span></div>
+					</div>
+				</a>
+			</div>
+
+			<div class="services-col">
+				<a href="services-marketing.html" class="services-item">
+					<div class="services-item__inner">
+						<img class="services-item__icon" src="assets/img/services-apps.svg" alt="">
+						<div class="services-item__title">Интернет-маркетинг</div>
+						<div class="services-item__subtitle">Контекстная реклама, SMM, SEO</div>
+						<div class="services-item__text">
+							<p>Продвижение в конкурентной борьбе или поражение центральной нервной системы? Мы предлагаем вам продвигаться всеми имеющимися у нас способами. Можем окунуть контекстной рекламой в ревущий океан продаж или вывести в десятку поисковой выдачи.</p>
+						</div>
 					</div>
 				</a>
 			</div>
 
 		</div>
 	</div>
-
-	<div id="services-particles"></div>
 
 </section>
 
 
 
-<article class="modal-page services-single" id="services1">
-	<button class="modal-page-close modalClose">Закрыть</button>
-
-	<div class="services-single__inner">
-
-		<header class="modal-page__header">
-		<div class="container">
-			<h2 class="modal-page__title">Аналитика бизнеса и маркетинговых стратегий</h2>
-		</div>
-		</header>
-
-		<div class="modal-page-section">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col">
-					<div class="paragraph">
-						<p class="bigger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quod sequi minus, distinctio! Ab cupiditate dolor ullam autem excepturi fugiat, maiores obcaecati est quod doloribus ex cumque, repellendus dolore accusamus.</p>
-					</div>
-				</div>
-				<div class="col-12 col-lg-1"></div>
-				<div class="col-12 col-md-3 col-lg-2">
-					<img src="assets/icons/services1-black.svg" alt="">
-				</div>
-			</div>
-		</div>
-		</div>
-
-		<div class="modal-page-section">
-		<div class="service-prices">
-		<table>
-			<thead>
-			<tr>
-				<td>Услуга</td>
-				<td>Примерый объем работ</td>
-				<td>Стоимость</td>
-			</tr>
-			</thead>
-			<tr>
-				<td>
-					<div class="service-prices__service-title">Сайт-визитка, Корпоративный сайт</div>
-					<div class="service-prices__service-subtitle">Сайт для представления бизнеса в интернете</div>
-				</td>
-				<td><div class="service-prices__service-period">2 недели</div></td>
-				<td><div class="service-prices__service-price">от 60 000 рублей</div></td>
-			</tr>
-			<tr>
-				<td>
-					<div class="service-prices__service-title">Landing page</div>
-					<div class="service-prices__service-subtitle">Сайт для продажи продукта или услуги</div>
-				</td>
-				<td><div class="service-prices__service-period">20 дней</div></td>
-				<td><div class="service-prices__service-price">от 120 000 рублей</div></td>
-			</tr>
-			<tr>
-				<td>
-					<div class="service-prices__service-title">Интернет-магазин</div>
-				</td>
-				<td><div class="service-prices__service-period">40 дней</div></td>
-				<td><div class="service-prices__service-price">от 200 000 рублей</div></td>
-			</tr>
-			<tr>
-				<td>
-					<div class="service-prices__service-title">Форумы, соцсети и порталы</div>
-				</td>
-				<td colspan="2"><div class="service-prices__service-period">Срок и стоимость выясняются по обсуждению проекта</div></td>
-			</tr>
-		</table>
-		</div>
-		</div>
-
-		<div class="modal-page-section">
-		<div class="container">
-			<div class="paragraph">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quisquam labore id commodi adipisci eligendi sequi modi iste eaque expedita corporis mollitia impedit voluptas accusantium voluptates tempora ex libero, consequatur rem omnis culpa totam. Quia repellat nulla cupiditate, ad neque voluptate! Neque quam consequuntur, esse culpa vitae impedit! Culpa ad a, atque sint accusamus pariatur quod nisi est, ea, quis asperiores animi nulla nobis voluptatem. Officiis ducimus adipisci officia veritatis, illum nisi eveniet sequi fugit temporibus, soluta corporis rem accusamus facilis sunt vitae porro? Consequuntur ullam enim similique, quaerat culpa soluta delectus quos assumenda! Magnam id at placeat ab iure!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quisquam labore id commodi adipisci eligendi sequi modi iste eaque expedita corporis mollitia impedit voluptas accusantium voluptates tempora ex libero, consequatur rem omnis culpa totam. Quia repellat nulla cupiditate, ad neque voluptate! Neque quam consequuntur, esse culpa vitae impedit! Culpa ad a, atque sint accusamus pariatur quod nisi est, ea, quis asperiores animi nulla nobis voluptatem. Officiis ducimus adipisci officia veritatis, illum nisi eveniet sequi fugit temporibus, soluta corporis rem accusamus facilis sunt vitae porro? Consequuntur ullam enim similique, quaerat culpa soluta delectus quos assumenda! Magnam id at placeat ab iure!</p>
-			</div>
-		</div>
-		</div>
-
-		<div class="service-portfolio">
-		<div class="container">
-			<h2>Портфолио</h2>
-			<div class="row service-portfolio-row">
-				<div class="service-portfolio-col col-12 col-sm-6 col-lg-4">
-					<a href="#portfolioSingle1" class="service-portfolio-item modalTrigger" style="background-image: url(img/portfolio/btcz-mockup.jpg);">
-						<div class="service-portfolio-item__title">Обменник BTCZ.io</div>
-					</a>
-				</div>
-				<div class="service-portfolio-col col-12 col-sm-6 col-lg-4">
-					<a href="#portfolioSingle2" class="service-portfolio-item modalTrigger" style="background-image: url(img/portfolio/advokat-thumb.png);">
-						<div class="service-portfolio-item__title">Лендинг «Адвокат призывника»</div>
-					</a>
-				</div>
-				<div class="service-portfolio-col col-12 col-sm-6 col-lg-4">
-					<a href="#portfolioSingle3" class="service-portfolio-item modalTrigger" style="background-image: url(img/portfolio/ktrademockup.png);">
-						<div class="service-portfolio-item__title">Интернет-магазин ktradestore.com</div>
-					</a>
-				</div>
-			</div>	
-		</div>
-		</div>
-
-	</div>
-	
-</article>
-
-
-<article class="modal-page services-single" id="services2">
-	<button class="modal-page-close modalClose">Закрыть</button>
-
-	<div class="services-single__inner">
-
-		<header class="modal-page__header">
-			<div class="container">
-				<h2 class="modal-page__title">Интернет-маркетинг: контекстная реклама, SMM, SEO</h2>
-			</div>
-		</header>
-
-		<div class="modal-page-section">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col">
-						<div class="paragraph bigger light">
-							<p>Продвижение в конкурентной борьбе или поражение центральной нервной системы? Мы предлагаем вам продвигаться всеми имеющимися у нас способами. Можем окунуть контекстной рекламой в ревущий океан продаж или вывести в десятку поисковой выдачи, например.</p>
-						</div>
-					</div>
-					<div class="col-12 col-lg-1"></div>
-					<div class="col-12 col-md-3 col-lg-2">
-						<img src="assets/icons/services2-black.svg" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal-page-section">
-		<div class="service-prices">
-		<div class="service-prices-table">
-			<div class="service-prices-table-header row">
-				<div class="col-5 col-md-4">Услуга</div>
-				<div class="col">Стоимость</div>
-			</div>
-			<div class="service-prices-table-row row align-items-center">
-				<div class="col-12 col-sm-5 col-md-4">
-					<div class="service-prices__service-title">Контекстная реклама</div>
-					<div class="service-prices__service-subtitle">С помощью инструментов сверхточной рекламы Яндекс.Директ и Google AdWords мы гипнотически привлекаем к вам сотни десятков клиентов</div>
-				</div>
-				<div class="col-12 col-sm"><div class="service-prices__service-price"><b class="service-prices-mobile">Стоимость: </b>от 10 000 рублей</div></div>
-			</div>
-			<div class="service-prices-table-row row align-items-center">
-				<div class="col-12 col-sm-5 col-md-4">
-					<div class="service-prices__service-title">Ведение социальных сетей</div>
-				</div>
-				<div class="col-12 col-sm"><div class="service-prices__service-price"><b class="service-prices-mobile">Стоимость: </b>от 10 000 рублей в мес.</div></div>
-			</div>
-			<div class="service-prices-table-row row align-items-center">
-				<div class="col-12 col-sm-5 col-md-4">
-					<div class="service-prices__service-title">SEO-аудит и оптимизация</div>
-				</div>
-				<div class="col-12 col-sm"><div class="service-prices__service-price"><b class="service-prices-mobile">Стоимость: </b>от 30 000 рублей</div></div>
-			</div>
-		</div>
-		</div>
-		</div>
-
-	</div>
-	
-</article>
-
-
-<article class="modal-page services-single" id="services3">
-	<button class="modal-page-close modalClose">Закрыть</button>
-
-	<div class="services-single__inner">
-
-		<header class="modal-page__header">
-			<div class="container">
-				<h2 class="modal-page__title">Брендинг и графический дизайн</h2>
-			</div>
-		</header>
-
-		<div class="modal-page-section">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col">
-					<div class="paragraph bigger light">
-							<p>Наша цель в UX/UI дизайне – сделать взаимодействие пользователя с продуктом как можно более простым и логичным.</p>
-							<p>Прототипирование – лучший способ оценить удобство пользования и логику нового интерфейса. В дальнейшем работа над дизайн-концепцией проекта будет основываться на разработанных прототипах.</p>
-					</div>
-				</div>
-				<div class="col-12 col-lg-1"></div>
-				<div class="col-12 col-md-3 col-lg-2">
-					<img src="assets/icons/services3-black.svg" alt="">
-				</div>
-			</div>
-		</div>
-		</div>
-
-		<div class="modal-page-section">
-		<div class="service-prices">
-		<div class="service-prices-table">
-			<div class="service-prices-table-header row">
-				<div class="col-5 col-md-4">Услуга</div>
-				<div class="col">Примерый объем работ</div>
-				<div class="col">Стоимость</div>
-			</div>
-
-			<div class="service-prices-table-row row align-items-center">
-				<div class="col-12 col-sm-5 col-md-4">
-					<div class="service-prices__service-title">Фирменный стиль</div>
-					<div class="service-prices__service-subtitle">Разработка логотипа и фирменного стиля с целью подчеркнуть индивидуальность и создать узнаваемое "лицо" компании.</div>
-				</div>
-				<div class="col-12 col-sm"><div class="service-prices__service-period">1-2 недели</div></div>
-				<div class="col-12 col-sm"><div class="service-prices__service-price"><b class="service-prices-mobile">Стоимость: </b>от 30 000 рублей</div></div>
-			</div>
-
-			<div class="service-prices-table-row row align-items-center">
-				<div class="col-12 col-sm-5 col-md-4">
-					<div class="service-prices__service-title">Айдентика</div>
-					<div class="service-prices__service-subtitle">Коммерческий и концептуальный дизайн айдентики бренда, а также компании, которая за этим стоит.</div>
-				</div>
-				<div class="col-12 col-sm"><div class="service-prices__service-period">3-4 недели</div></div>
-				<div class="col-12 col-sm"><div class="service-prices__service-price"><b class="service-prices-mobile">Стоимость: </b>от 60 000 рублей</div></div>
-			</div>
-
-			<div class="service-prices-table-row row align-items-center">
-				<div class="col-12 col-sm-5 col-md-4">
-					<div class="service-prices__service-title">Контент</div>
-					<div class="service-prices__service-subtitle">Создание промороликов и анимаций с профессиональным музыкальным и голосовым сопровождением.</div>
-				</div>
-				<div class="col-12 col-sm"><div class="service-prices__service-period"></div></div>
-				<div class="col-12 col-sm"><div class="service-prices__service-price"><b class="service-prices-mobile">Стоимость: </b>от 30 000 рублей</div></div>
-			</div>
-
-		</div>
-		</div>
-		</div>
-
-		<div class="modal-page-section">
-		<div class="container">
-			<div class="paragraph">
-					<p>Фирменный стиль – «лицо» организации и её продуктов. Мы убеждены, что создать сильный бренд можно только посредством анализа и экспериментов, а потому подходим к задачам с полной самоотдачей и энтузиазмом. Убираем все лишнее и добавляем значимое, чтобы бизнес надолго завоевал внимание и лояльность своих клиентов.</p>
-					<p>Думая о каком-либо продукте или изделии на ум сразу приходит его знак, уникальный символ, вызывающий определенные ассоциации. Поэтому так важно иметь логотип и фирменный стиль, отражающий идею бизнеса. В процессе работы мы подготавливаем несколько рабочих концепций, среди которых заказчик выбирает наиболее подходящий с его точки зрения. Выбранный вариант дорабатывается и адаптируется под различные виды носителей, от ручки до билборда.</p>
-			</div>
-		</div>
-		</div>
-
-	</div>
-	
-</article>
-
-
-<article class="modal-page services-single" id="services4">
-	<button class="modal-page-close modalClose">Закрыть</button>
-
-	<div class="services-single__inner">
-
-		<header class="modal-page__header">
-			<div class="container">
-				<h2 class="modal-page__title">Сайты и приложения (дизайн интерфейса и разработка)</h2>
-			</div>
-		</header>
-
-		<div class="modal-page-section">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col">
-						<div class="paragraph bigger">
-							<p>Мы делим проектную работу на этапы: Проектирование и Анализ, разработка концепции дизайна верстка и программирование интерфейса, Программирование административной части, тестирование и сдача проекта.</p>
-							<p>Наша цель в UX/UI дизайне – сделать взаимодействие пользователя с продуктом как можно более простым и логичным.</p>
-							<p>Прототипирование – лучший способ оценить удобство пользования и логику нового интерфейса. В дальнейшем работа над дизайн-концепцией проекта будет основываться на разработанных прототипах.</p>
-						</div>
-					</div>
-					<div class="col-12 col-lg-1"></div>
-					<div class="col-12 col-md-3 col-lg-2">
-						<img src="assets/icons/services4-black.svg" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="modal-page-section">
-		<div class="service-prices">
-		<div class="service-prices-table">
-			<div class="service-prices-table-header row">
-				<div class="col-5 col-md-4">Услуга</div>
-				<div class="col">Примерый объем работ</div>
-				<div class="col">Стоимость</div>
-			</div>
-
-			<div class="service-prices-table-row row align-items-center">
-				<div class="col-12 col-sm-5 col-md-4">
-					<div class="service-prices__service-title">Сайт-визитка, Корпоративный сайт</div>
-					<div class="service-prices__service-subtitle">Сайт для представления бизнеса в интернете</div>
-				</div>
-				<div class="col-12 col-sm"><div class="service-prices__service-period">2 недели</div></div>
-				<div class="col-12 col-sm"><div class="service-prices__service-price"><b class="service-prices-mobile">Стоимость: </b>от 60 000 рублей</div></div>
-			</div>
-
-			<div class="service-prices-table-row row align-items-center">
-				<div class="col-12 col-sm-5 col-md-4">
-					<div class="service-prices__service-title">Landing page</div>
-					<div class="service-prices__service-subtitle">Сайт для продажи продукта или услуги</div>
-				</div>
-				<div class="col-12 col-sm"><div class="service-prices__service-period">20 дней</div></div>
-				<div class="col-12 col-sm"><div class="service-prices__service-price"><b class="service-prices-mobile">Стоимость: </b>от 120 000 рублей</div></div>
-			</div>
-
-			<div class="service-prices-table-row row align-items-center">
-				<div class="col-12 col-sm-5 col-md-4">
-					<div class="service-prices__service-title">Интернет-магазин</div>
-				</div>
-				<div class="col-12 col-sm"><div class="service-prices__service-period">40 дней</div></div>
-				<div class="col-12 col-sm"><div class="service-prices__service-price"><b class="service-prices-mobile">Стоимость: </b>от 200 000 рублей</div></div>
-			</div>
-
-			<div class="service-prices-table-row row align-items-center">
-				<div class="col-12 col-sm-5 col-md-4">
-					<div class="service-prices__service-title">Форумы, соцсети и порталы</div>
-				</div>
-				<div class="col-12 col-sm"><div class="service-prices__service-period">Срок и стоимость выясняются при обсуждении проекта</div></div>
-			</div>
-
-			<div class="service-prices-table-row row align-items-center">
-				<div class="col-12 col-sm-5 col-md-4">
-					<div class="service-prices__service-title">Мобильные приложения</div>
-				</div>
-				<div class="col-12 col-sm"><div class="service-prices__service-period">Срок и стоимость выясняются при обсуждении проекта</div></div>
-			</div>
-
-		</div>
-		</div>
-		</div>
-
-		<div class="modal-page-section">
-			<div class="container">
-				<div class="paragraph">
-						<h4>Кому это может быть полезно?</h4>
-						<p>Компаниям, только начинающим свою деятельность, чья основная задача - поиск и привлечение потенциальных клиентов. Современный веб-сайт позволяет найти клиентов как в своем округе, так и за пределами округа и даже страны.</p>
-						<p>Организациям с опытом коммерческой деятельности, для привлечения новых аудиторий, расширения географии и улучшения сервиса для существующий клиентов. Веб-ресурс может быть отличной альтернативой открытия новых представительств и открывать новые возможности сотрудникам и клиентам.</p>
-						<p>Предприятиям, которым необходимо познакомить рынок с новым продуктом, направлением или запустить какую-либо акцию. Яркие сайты, целевые страницы, промо-презентации - нет ограничений для фантазии.</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="service-portfolio">
-			<div class="container">
-	
-				<h2>Портфолио</h2>
-
-				<div class="row service-portfolio-row">
-					<div class="service-portfolio-col col-12 col-sm-6 col-lg-4">
-						<a href="#portfolioSingle1" class="service-portfolio-item modalTrigger" style="background-image: url(img/portfolio/btcz-mockup.jpg);">
-							<div class="service-portfolio-item__title">Обменник BTCZ.io</div>
-						</a>
-					</div>
-					<div class="service-portfolio-col col-12 col-sm-6 col-lg-4">
-						<a href="#portfolioSingle2" class="service-portfolio-item modalTrigger" style="background-image: url(img/portfolio/advokat-thumb.png);">
-							<div class="service-portfolio-item__title">Лендинг «Адвокат призывника»</div>
-						</a>
-					</div>
-					<div class="service-portfolio-col col-12 col-sm-6 col-lg-4">
-						<a href="#portfolioSingle3" class="service-portfolio-item modalTrigger" style="background-image: url(img/portfolio/ktrademockup.png);">
-							<div class="service-portfolio-item__title">Интернет-магазин ktradestore.com</div>
-						</a>
-					</div>
-				</div>	
-			</div>
-		</div>
-
-	</div>
-	
-</article>
 
 
 
 <section id="portfolio" class="section portfolio">
 
-	<h2 class="section-title">Последние работы</h2>
+	<div class="container"><h2 class="section-title">Последние работы</h2></div>
 
 	<div class="portfolio-items">
 		
@@ -765,7 +411,7 @@
 </footer>
 
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="js/main.js?v=8.4"></script>
+<script src="js/main.js?v=2.2"></script>
 
 </body>
 </html>

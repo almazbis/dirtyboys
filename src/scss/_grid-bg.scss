@@ -1,0 +1,110 @@
+.grid-bg {
+	position: fixed;
+	z-index: -1;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+
+	> .container {
+		padding: 0;
+	}
+
+	.container, .row {
+		height: 100%;
+	}
+
+	span {
+		display: block;
+		height: 100%;
+		width: 1px;
+		background: rgba($black, .07);
+
+		&::before {
+			content: "";
+			background: rgba($black, .15);
+
+			display: block;
+			position: absolute;
+			top: -150%;
+			left: 0;
+			width: 1px;
+			height: 150%;
+			animation: gridLineRain 5s infinite;
+		}
+
+	}
+
+	&__column:first-child span {
+		&::before {
+			animation-delay: 28s;
+		}
+	}
+
+	&__column:nth-child(2) span {
+		&::before {
+			animation-delay: 10s;
+		}
+	}
+
+	&__column:nth-child(3) span {
+		&::before {
+			animation-delay: 17s;
+		}
+	}
+
+	&__column:nth-child(4) span {
+		&::before {
+			animation-delay: 13s;
+		}
+	}
+
+	&__column:nth-child(5) span {
+		&::before {
+			animation-delay: 15s;
+		}
+	}
+
+	&__column:nth-child(6) span {
+		&::before {
+			animation-delay: 23s;
+		}
+	}
+
+}
+
+
+
+
+@keyframes gridLineRain {
+
+	0% {
+		top: -150%;
+	}
+
+	100% {
+		top: 300%;
+	}
+
+}
+
+
+@media screen and (max-width: 575px) {
+
+	.grid-bg {
+		padding-left: 15px;
+		padding-right: 15px;
+
+
+		&__column:nth-child(2) {
+			display: none;
+		}
+
+		&__column:nth-child(4) {
+			display: none;
+		}
+
+	}
+
+
+}
