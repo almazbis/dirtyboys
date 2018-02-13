@@ -1,0 +1,195 @@
+.input-text {
+	margin: 0;
+	display: block;
+	position: relative;
+
+	input, textarea {
+		font: inherit;
+		font-size: 16px;
+		border: 2px solid darken($gray-light, 10%);
+		background: none;
+		
+		width: 100%;
+		padding: 10px;
+
+		transition: border $transition;
+
+		&:focus {
+			outline: none;
+			border-color: darken($gray-light, 30%);
+		}
+
+		&.font-serif {
+			font-family: $font-text;
+		}
+
+	}
+
+	input {
+		min-height: 50px;
+	}
+
+	textarea {
+		height: 100px;
+		padding: 10px;
+	}
+
+	&.input-dirty {
+
+		input, textarea {
+			outline: none;
+
+			~ .input-title {
+				opacity: 1;
+			}
+
+		}
+	}
+}
+
+.input-title {
+	font-weight: 600;
+	line-height: 1.2;
+	
+	margin-bottom: 10px;
+}
+
+.inputs {
+	.input-text {
+		margin-bottom: 15px;
+	}
+}
+
+
+// .form-submit {
+
+// 	input, button {
+// 		font: inherit;
+// 		font-size: 16px;
+// 		font-weight: bold;
+// 		text-align: left;
+// 		display: block;
+// 		width: 100%;
+// 		padding: 20px;
+// 		background: $black url(../assets/icons/arrow-right-white.svg) no-repeat right 60px center;
+// 		background-size: auto .8em;
+// 		border: none;
+// 		opacity: .5;
+
+// 		transition: .3s;
+// 		cursor: pointer;
+
+// 		&:hover, &:focus {
+// 			outline: none;
+// 			background-position: right 15px center;
+// 			padding-left: 30px;
+// 			opacity: 1;
+// 		}
+// 	}
+// }
+
+
+
+
+.checkbox {
+
+	&__input {
+	  position: absolute;
+	  opacity: 0;
+
+	  & + label {
+	    position: relative;
+	    cursor: pointer;
+	    padding: 0;
+	  }
+
+	  & + label:before {
+	    content: '';
+	    margin-right: 10px;
+	    display: inline-block;
+	    vertical-align: text-top;
+	    width: 20px;
+	    height: 20px;
+	    background: white;
+	  }
+
+	  &:hover + label:before {
+	    background: #eee;
+	  }
+	  
+	  &:focus + label:before {
+	    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+	  }
+
+	  &:checked + label:before {
+	    background: $prim;
+	  }
+	  
+	  &:disabled + label {
+	    color: #b8b8b8;
+	    cursor: auto;
+	  }
+
+	  &:disabled + label:before {
+	    box-shadow: none;
+	    background: #ddd;
+	  }
+
+	  &:checked + label:after {
+	    content: '';
+	    position: absolute;
+	    left: 5px;
+	    top: 9px;
+	    background: white;
+	    width: 2px;
+	    height: 2px;
+	    box-shadow: 
+	      2px 0 0 white,
+	      4px 0 0 white,
+	      4px -2px 0 white,
+	      4px -4px 0 white,
+	      4px -6px 0 white,
+	      4px -8px 0 white;
+	    transform: rotate(45deg);
+	  }
+	}
+
+}
+
+
+
+.form-agree {
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	a {
+		color: $prim;
+		text-decoration: underline;
+	}
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+
+	.input-text {
+
+		input, textarea {
+			font-size: 14px;
+		}
+
+		textarea {
+			height: 90px;
+		}
+
+	}
+
+}
+
+
+
+
+
+

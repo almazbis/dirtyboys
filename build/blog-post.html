@@ -17,7 +17,7 @@
 
 
 <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-<link rel="stylesheet" href="css/style.css?v=2.3">
+<link rel="stylesheet" href="css/style.css?v=2.4">
 </head>
 <body>
 
@@ -100,36 +100,36 @@
 
 
 <footer id="contact" class="footer">
-<div class="footer-inner">
 <div class="container">
+<div class="footer-inner">	
 <div class="row">
 
-	<div class="col-12 col-md-5">
+	<div class="col-12 col-lg-5">
 		<ul class="footer-contacts">
-			<li class="footer-contacts__item footer-contacts__email"><a href="mailto:mail@indimedia.ru">mail@indimedia.ru</a></li>
-			<li class="footer-contacts__item footer-contacts__vk"><a href="https://vk.com/indimedia_zakazat_sayt" target="_blank">ВКонтакте</a></li>
-			<li class="footer-contacts__item footer-contacts__tg"><a href="https://t.me/indimediabbot" target="_blank">Telegram-бот</a></li>
+			<li class="footer-contacts-item footer-contacts__email"><a href="mailto:mail@indimedia.ru">mail@indimedia.ru</a></li>
+			<li class="footer-contacts-item footer-contacts__vk"><a href="https://vk.com/indimedia_zakazat_sayt" target="_blank">ВКонтакте</a></li>
+			<li class="footer-contacts-item footer-contacts__tg"><a href="https://t.me/indimediabbot" target="_blank">Telegram-бот</a></li>
 		</ul>
 	</div>
 
-	<div class="col-12 col-md">
-		<div class="footer-form">
-	<form id="contactForm" action="contact.php" method="POST" class="contactForm footer-form__inner inputs inputs--light">
+	<div class="col-12 col-lg">
+		<div class="contact-form">
+	<form id="contactForm" action="contact.php" method="POST" class="contactForm inputs">
 
-		<h2 class="footer-form__title">Оставить сообщение</h2>
-
-		<label class="footer-form__contact input-text">
-			<input id="contact-method" type="text" name="formcontactmethod" class="formcontactmethod" placeholder="Удобный способ связи. VK, FB, Telegram, WhatsApp..">
-			<div class="input-title">Удобный способ связи. VK, FB, Telegram, WhatsApp..</div>
-		</label>
+		<h2 class="contact-form__title">Оставить сообщение</h2>
 
 		<label class="footer-contact__message input-text">
-			<textarea id="contact-message" name="formmessage" class="formmessage" placeholder="Ваше сообщение..."></textarea>
-			<div class="input-title">Ваше сообщение</div>
+			<div class="input-title">Расскажите о своем проекте</div>
+			<textarea id="contact-message" name="formmessage" class="formmessage font-serif" placeholder="Я хочу..."></textarea>
 		</label>
 
-		<div class="form-submit form-submit--light">
-			<input type="submit" value="Отправить заявку">
+		<label class="contact-form__contact input-text">
+			<div class="input-title">Как с вами связаться?</div>
+			<input id="contact-method" type="text" name="formcontactmethod" class="formcontactmethod font-serif" placeholder="Email, Телефон или любой мессенджер...">
+		</label>
+
+		<div class="contact-form__submit">
+			<input type="submit" class="link-arrow" value="Отправить заявку">
 		</div>
 
 		<div class="contact-form-result contact-form-result--success formSuccess"><div class="contact-form-result__inner"><p><b>Заявка успешно отправлена!</b>Мы свяжемся с вами как можно скорее.</p></div></div>
@@ -146,7 +146,7 @@
 </footer>
 
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="js/main.js?v=2.3"></script>
+<script src="js/main.js?v=2.4"></script>
 
 <script>
 

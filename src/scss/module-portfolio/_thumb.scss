@@ -1,34 +1,22 @@
-.btn-more {
-	font-weight: 600;
-	display: inline-block;
-	background: transparent;
-	padding: .5em 0;
+.portfolio-item {
 
-	position: relative;
-
-	&::after {
-		content: "";
-		display: block;
-		width: 68px;
-		height: 10px;
-		background: url(../assets/icons/btn-more-arrow.svg) no-repeat center;
+	&__more {
+		font-size: 0;
+		background: url(../assets/icons/btn-more-arrow.svg) no-repeat left center;
 		background-size: contain;
-		position: absolute;
-		top: 50%;
-		right: 10%;
-		transform: translateY(-50%);
-		transition: .8s;
 		opacity: 0;
+		
+		display: inline-block;
+		position: relative;
+		left: -20px;
+		padding: .5em 0;
+		width: 68px;
+		height: 12px;
+
+		transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		transition-delay: .7s;
 	}
-}
 
-
-
-
-.portfolio {
-	background: #fff;
-	position: relative;
-	z-index: 1;
 }
 
 
@@ -36,8 +24,6 @@
 	display: block;
 	width: 55%;
 	height: auto;
-	// box-shadow: $shadow-light;
-	// min-height: 200px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -71,7 +57,7 @@
 	width: 50%;
 	transform: translateY(-50%);
 
-	transition: .4s;
+	transition: .5s;
 
 	p {
 		line-height: 1.5;
@@ -82,7 +68,7 @@
 	padding: 60px 30px;
 
 	.portfolio-item-thumb {
-		transition: .7s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		transition: 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	}
 
 	&__title {
@@ -91,18 +77,13 @@
 		line-height: 1.1;
 		margin-bottom: 25px;
 
-		transition: .4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		transition: .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	}
 
 	&__text {
-		transition: .4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		transition: .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 		transition-delay: .1s;
 		margin-bottom: 25px;
-	}
-
-	.btn-more {
-		transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-		transition-delay: .15s;
 	}
 
 }
@@ -129,8 +110,6 @@
 		.portfolio-item-content {
 			left: 5%;
 		}
-
-
 	}
 
 	&:hover {
@@ -138,8 +117,7 @@
 
 		.portfolio-item-thumb {
 			opacity: .6;
-			transform: translateY(-15px);
-			// box-shadow: $shadow-light;
+			// transform: translateY(-15px);
 		}
 
 		#{$item}__title {
@@ -150,14 +128,10 @@
 			transform: translateY(-25px);
 		}
 
-		.btn-more {
-			border-color: rgba($black, .5);
-
-			&::after {
-				right: -80%;
-				opacity: 1;
-			}
-
+		#{$item}__more {
+			// transform: translateY(-25px);
+			left: 0;
+			opacity: 1;
 		}
 
 	}

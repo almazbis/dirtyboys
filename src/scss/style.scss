@@ -179,25 +179,26 @@ img.img-shadow {
 
 
 
-@import 'grid-bg';
-@import 'blocks';
-@import 'titles';
-@import 'btns-and-links';
-@import 'forms';
+@import 'global/blocks';
+@import 'global/titles';
+@import 'global/btns-and-links';
+@import 'global/forms';
+
 @import 'components/logo';
 @import 'components/nav';
+@import 'components/form';
 @import 'components/mention';
 @import 'components/pagination';
 @import 'components/modal-page';
+@import 'grid-bg';
+
 @import 'partials/header';
 @import 'partials/footer';
 @import 'sections/about';
 
-@import 'services/services';
+@import 'module-services/services';
+@import 'module-portfolio/portfolio';
 
-@import 'sections/portfolio';
-@import 'sections/portfolio-single';
+// @import 'modules/blog';
 
-@import 'modules/blog';
-
-@import 'mods';
+@import 'global/mods';

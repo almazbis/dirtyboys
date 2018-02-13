@@ -1,0 +1,56 @@
+.contact-form {
+
+	&__title {
+		font-size: 1.6em;
+
+		margin-bottom: 20px;
+	}
+
+	input, textarea {
+		// font-family: $font-text;
+	}
+
+	&__submit {
+		margin-top: 45px;
+	}
+}
+
+
+
+
+
+////////////////////////////////////////////////
+// RESULT
+////////////////////////////////////////////////
+
+.contact-form-result {
+	margin-top: 15px;
+
+	padding: 15px;
+	background: #fff;
+	color: $black;
+
+	display: none;
+
+	b {
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	p {
+		line-height: 1.5;
+		margin: 0;
+		margin-bottom: 5px;
+	}
+
+	&--success {
+		background: #03BEB5;
+	}
+
+	&--fail {
+		background: #F3657C;
+	}
+
+}
+
+
