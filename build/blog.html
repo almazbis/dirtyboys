@@ -17,28 +17,34 @@
 
 
 <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-<link rel="stylesheet" href="css/style.css?v=2.2">
+<link rel="stylesheet" href="css/style.css?v=2.3">
 </head>
 <body>
 
 <header class="header">
-
-	<nav class="header-menu">
+	<nav class="header-nav">
 		<div class="container">
-			<div class="header-menu-links">
-				<a href="/" class="logo">indimedia</a>
-				<div class="header-menu__contact-cta">
-					<button class="smoothScroll" href="#contact">Связаться</button>
+			<div class="row align-items-center">
+
+				<div class="col-auto header-nav-col header-nav-col--logo"><a href="/" class="logo">indimedia</a></div>
+
+				<div class="col header-nav-col header-nav-col--hamburger">
+					<button class="menu-btn btn-hamburger js-menu-btn">Меню<span></span><span></span></button>	
 				</div>
-				<ul>
-					<li><a href="/#services">Услуги</a></li>
-					<li><a href="/#portfolio">Портфолио</a></li>
-					<!-- <li><a href="#contact" class="smoothScroll">Контакты</a></li> -->
-				</ul>
+
+				<div class="col-12 col-sm header-nav-col header-nav-col--menu">
+					<div class="menu js-menu-links">
+						<ul>
+							<li><a href="/#services">Услуги</a></li>
+							<li><a href="/#portfolio">Портфолио</a></li>
+							<li><a href="#contact">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</nav>
-
 </header>
 
 
@@ -210,30 +216,30 @@
 
 	<div class="col-12 col-md">
 		<div class="footer-form">
-			<form id="contactForm" action="contact.php" method="POST" class="contactForm footer-form__inner inputs inputs--light">
+	<form id="contactForm" action="contact.php" method="POST" class="contactForm footer-form__inner inputs inputs--light">
 
-				<h2 class="footer-form__title">Оставить сообщение</h2>
+		<h2 class="footer-form__title">Оставить сообщение</h2>
 
-				<label class="footer-form__contact input-text">
-					<input type="text" name="formcontactmethod" class="formcontactmethod" placeholder="Удобный способ связи. VK, FB, Telegram, WhatsApp..">
-					<div class="input-title">Удобный способ связи. VK, FB, Telegram, WhatsApp..</div>
-				</label>
+		<label class="footer-form__contact input-text">
+			<input id="contact-method" type="text" name="formcontactmethod" class="formcontactmethod" placeholder="Удобный способ связи. VK, FB, Telegram, WhatsApp..">
+			<div class="input-title">Удобный способ связи. VK, FB, Telegram, WhatsApp..</div>
+		</label>
 
-				<label class="footer-contact__message input-text">
-					<textarea name="formmessage" class="formmessage" placeholder="Ваше сообщение..."></textarea>
-					<div class="input-title">Ваше сообщение</div>
-				</label>
+		<label class="footer-contact__message input-text">
+			<textarea id="contact-message" name="formmessage" class="formmessage" placeholder="Ваше сообщение..."></textarea>
+			<div class="input-title">Ваше сообщение</div>
+		</label>
 
-				<div class="form-submit form-submit--light">
-					<input type="submit" value="Отправить заявку">
-				</div>
-
-				<div class="contact-form-result contact-form-result--success formSuccess"><div class="contact-form-result__inner"><p><b>Заявка успешно отправлена!</b>Мы свяжемся с вами как можно скорее.</p></div></div>
-				<div class="contact-form-result contact-form-result--fail formFail"><div class="contact-form-result__inner"><p><b>Ошибка!</b>Форма сломалась или устала. Попробуйте связаться с нами одним из других контактов, указанных на этой странице.</p></div></div>
-				<div class="contact-form-result contact-form-result--notfilled formNotFilled"><div class="contact-form-result__inner"><p><b>Форма не заполнена!</b>Если вам никак не удается заполнить форму, попробуйте связаться с нами одним из других контактов, указанных на этой странице.</p></div></div>
-
-			</form>
+		<div class="form-submit form-submit--light">
+			<input type="submit" value="Отправить заявку">
 		</div>
+
+		<div class="contact-form-result contact-form-result--success formSuccess"><div class="contact-form-result__inner"><p><b>Заявка успешно отправлена!</b>Мы свяжемся с вами как можно скорее.</p></div></div>
+		<div class="contact-form-result contact-form-result--fail formFail"><div class="contact-form-result__inner"><p><b>Ошибка!</b>Форма сломалась или устала. Попробуйте связаться с нами одним из других контактов, указанных на этой странице.</p></div></div>
+		<div class="contact-form-result contact-form-result--notfilled formNotFilled"><div class="contact-form-result__inner"><p><b>Форма не заполнена!</b>Если вам никак не удается заполнить форму, попробуйте связаться с нами одним из других контактов, указанных на этой странице.</p></div></div>
+
+	</form>
+</div>
 	</div>
 
 </div>
@@ -242,7 +248,7 @@
 </footer>
 
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="js/main.js?v=2.2"></script>
+<script src="js/main.js?v=2.3"></script>
 
 <script>
 

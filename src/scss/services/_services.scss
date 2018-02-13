@@ -1,11 +1,17 @@
+///--- THUMBNAILS ---
 @import 'thumb';
 
+///--- THE SERVICES SECTION ON HOMEPAGE ---
 .services-section {
 	background: rgba(#fafcff, .7);
 	position: relative;
 	z-index: 1;
 }
 
-@import 'single';
+///--- THE LINKS ON TOP OP EVERY SERVICE PAGE ---
+@import 'services-links';
 
-
+///--- SINGLE SERVICE PAGE ---
+@import 'single/about';
+@import 'single/prices';
+@import 'single/portfolio-thumbs';

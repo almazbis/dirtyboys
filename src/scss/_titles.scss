@@ -19,11 +19,33 @@
 
 }
 
+.section-title-2 {
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1.2;
+	opacity: .3;
+	color: $black;
+	margin-bottom: 45px;
+	padding-right: 15px;
+	padding-left: 15px;
+
+	.container & {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
 @media screen and (max-width: 575px) {
 
 	.section-title {
 		font-size: 2em;
 		margin-bottom: 45px;
+	}
+
+	.section-title-2 {
+		font-size: 1.6em;
+		margin-bottom: 30px;
 	}
 
 }

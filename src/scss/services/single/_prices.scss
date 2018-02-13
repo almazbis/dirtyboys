@@ -1,0 +1,78 @@
+.service-page-prices {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.service-page-prices-item {
+	background-color: $gray-light;
+
+	padding: 30px;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+
+	.col, 
+	[class*=col-] {
+		margin-bottom: 25px;
+	}
+
+	&__title {
+		font-size: 16px;
+
+		margin-bottom: 5px;
+	}
+
+	&__subtitle {
+		font-family: $font-text;
+		opacity: .5;
+	}
+
+	&__price {
+		font-size: 20px;
+		font-weight: 500;
+
+		&--undef {
+			font-size: 14px;
+			opacity: .5;
+		}
+	}
+	
+	&__order {
+		text-align: right;
+	}
+
+}
+
+
+
+@media screen and (min-width: 576px) {
+
+	.service-page-prices {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+	.service-page-prices-item {
+		padding: 25px 15px;
+		padding-bottom: 5px;
+	}
+
+}
+
+@media screen and (max-width: 360px) {
+
+	.service-page-prices-item {
+		
+		&__order {
+			text-align: left;
+
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+
+}

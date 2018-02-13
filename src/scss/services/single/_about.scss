@@ -1,0 +1,29 @@
+.service-page-about {
+	padding-top: 45px;
+	padding-bottom: 30px;
+
+	.title {
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-family: $font-text;
+
+		p {
+			margin-bottom: 1.5em;
+		}
+	}
+}
+
+@media screen and (min-width: 576px) {
+
+	.service-page-about {
+		padding-top: 60px;
+		padding-bottom: 60px;
+
+		&__text {
+			font-size: 18px;
+		}
+	}
+
+}

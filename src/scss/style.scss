@@ -64,6 +64,10 @@ h6 {
 	font-size: 1.5rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font;
+}
+
 a {
 	color: $prim;
 
@@ -178,8 +182,7 @@ img.img-shadow {
 @import 'grid-bg';
 @import 'blocks';
 @import 'titles';
-@import 'links';
-@import 'btns';
+@import 'btns-and-links';
 @import 'forms';
 @import 'components/logo';
 @import 'components/nav';

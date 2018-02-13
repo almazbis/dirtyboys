@@ -8,10 +8,17 @@
 
 	> .container {
 		padding: 0;
+		// padding-left: 20px;
+		// padding-right: 37px;
 	}
 
 	.container, .row {
 		height: 100%;
+	}
+
+	.col, 
+	[class*=col-] {
+		padding: 0;
 	}
 
 	span {

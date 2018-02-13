@@ -1,0 +1,46 @@
+// --- THE BASE
+.services-links {
+	background-color: $gray-light;
+
+	padding-top: 60px;
+	padding-bottom: 15px;
+}
+
+
+
+
+.services-links-item {
+	text-decoration: none;
+	color: $black;
+	opacity: .3;
+
+	display: block;
+	margin-bottom: 45px;
+
+	transition: $transition-fast;
+	user-select: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: $prim;
+		opacity: 1;
+		outline: none;
+	}
+
+	&--current {
+		opacity: 1;
+
+		pointer-events: none;
+	}
+
+	&__title {
+		font-weight: bold;
+
+		margin-bottom: 15px;
+	}
+
+	&__subtitle {
+		font-family: $font-text;
+	}
+}
