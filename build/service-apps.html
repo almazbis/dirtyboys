@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" id="html">
 <head>
 	<meta charset="utf-8">
 <title>indimedia - digital-студия</title>
 <meta name="description" content="«indimedia» - интернет рекламное агентство. Увеличиваем количество лидов и рост оборота за счет правильного продвижения."/>
 <meta name="keywords"  content="реклама питер, реклама москва, рекламное агентство, размещение рекламы, агентство рекламы,рекламное сопровождение бизнеса, медиа агентства, услуги рекламного агентства, медиапланирование, реклама в интернете, контекстная реклама," />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <link rel="icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,400i,500,600,700,700i,800,900&amp;subset=cyrillic" rel="stylesheet">
-<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,700i,800&amp;subset=cyrillic" rel="stylesheet"> -->
 <link href="https://fonts.googleapis.com/css?family=Tinos:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
 
-
 <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-<link rel="stylesheet" href="css/style.css?v=2.4">
+<link rel="stylesheet" href="css/style.css?v=2.8">
 </head>
 <body>
 
 <div class="grid-bg">
 	<div class="container">
-		<div class="row justify-content-between">
-			<div class="grid-bg__column col-auto"><span></span></div>
-			<div class="grid-bg__column col-auto"><span></span></div>
-			<div class="grid-bg__column col-auto"><span></span></div>
-			<div class="grid-bg__column col-auto"><span></span></div>
-			<div class="grid-bg__column col-auto"><span></span></div>
-			<div class="grid-bg__column col-auto"><span></span></div>
+		<div class="grid-bg__row">
+			<div class="grid-bg__column"><span></span></div>
+			<div class="grid-bg__column"><span></span></div>
+			<div class="grid-bg__column"><span></span></div>
+			<div class="grid-bg__column"><span></span></div>
+			<div class="grid-bg__column"><span></span></div>
+			<div class="grid-bg__column"><span></span></div>
 		</div>
 	</div>
 </div>
@@ -48,9 +47,9 @@
 				<div class="col-12 col-sm header-nav-col header-nav-col--menu">
 					<div class="menu js-menu-links">
 						<ul>
-							<li><a href="/#services">Услуги</a></li>
-							<li><a href="/#portfolio">Портфолио</a></li>
-							<li><a href="#contact">Контакты</a></li>
+							<li><a href="/#section-services">Услуги</a></li>
+							<li><a href="/#section-portfolio">Портфолио</a></li>
+							<li><a href="#section-contact">Контакты</a></li>
 						</ul>
 					</div>
 				</div>
@@ -61,42 +60,36 @@
 </header>
 
 
-
-<section class="services-links">
+<div class="services-links">
 	<div class="container">
 		<div class="row">
-
 			<div class="col-12 col-sm-6 col-lg">
-				<a href="services-marketing.html" class="services-links-item">
+				<a href="service-marketing.html" class="services-links-item">
 					<div class="services-links-item__title">Интернет-маркетинг</div>
 					<div class="services-links-item__subtitle">Контекстная реклама, SMM, SEO</div>
 				</a>
 			</div>
-
 			<div class="col-12 col-sm-6 col-lg">
-				<a href="services-marketing.html" class="services-links-item services-links-item--current" tabindex="-1">
+				<a href="service-gd.html" class="services-links-item" tabindex="-1">
 					<div class="services-links-item__title">Графический дизайн</div>
 					<div class="services-links-item__subtitle">Брендинг, фирменный стиль</div>
 				</a>
 			</div>
-
 			<div class="col-12 col-sm-6 col-lg">
-				<a href="services-marketing.html" class="services-links-item">
+				<a href="service-websites.html" class="services-links-item">
 					<div class="services-links-item__title">Сайты</div>
 					<div class="services-links-item__subtitle">Дизайн, разработка и продвижение сайтов</div>
 				</a>
 			</div>
-
 			<div class="col-12 col-sm-6 col-lg">
-				<a href="services-marketing.html" class="services-links-item">
+				<a href="service-apps.html" class="services-links-item services-links-item--current">
 					<div class="services-links-item__title">Приложения</div>
 					<div class="services-links-item__subtitle">Дизайн и разработка мобильных приложений</div>
 				</a>
 			</div>
-
 		</div>
 	</div>
-</section>
+</div>
 
 
 <article class="service-page">
@@ -105,13 +98,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-3 col-lg-4">
-					<h2 class="title">Сайты</h2>
+					<h2 class="title">Мобильные приложения</h2>
 				</div>
 				<div class="col-12 col-md">
 					<div class="service-page-about__text">
-						<p>Мы делим проектную работу на этапы: Проектирование и Анализ, разработка концепции дизайна верстка и программирование интерфейса, Программирование административной части, тестирование и сдача проекта.</p>
-						<p>Наша цель в UX/UI дизайне – сделать взаимодействие пользователя с продуктом как можно более простым и логичным.</p>
-						<p>Прототипирование – лучший способ оценить удобство пользования и логику нового интерфейса. В дальнейшем работа над дизайн-концепцией проекта будет основываться на разработанных прототипах.</p>
+						<p>В команде <b>indimedia</b> есть UX/UI-дизайнеры и разработчики, разбирающиеся в последних технологиях создания эффективных и работающих приложений.</p>
 					</div>
 				</div>
 				<div class="col-12 col-xl-1"></div>
@@ -121,64 +112,50 @@
 
 	<div class="service-page-prices">
 		<div class="container">
-			<div class="section-title-2">Цены:</div>
 
 			<div class="service-page-prices__items">
 
 				<div class="service-page-prices-item">
 					<div class="row">
 						<div class="col-12 col-md-5">
-							<h3 class="service-page-prices-item__title">Сайт-визитка, Корпоративный сайт</h3>
-							<p class="service-page-prices-item__subtitle">Сайт для представления бизнеса в интернете</p>
-						</div>
-						<div class="col">
-							<div class="service-page-prices-item__price">от 60 000 руб.</div>
-						</div>
-						<div class="col-auto col-sm service-page-prices-item__order">
-							<a href="#contact" class="link-arrow js-go-to-form" data-form-message="Привет! Хочу заказать сайт-визитку для">Заказать</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="service-page-prices-item">
-					<div class="row">
-						<div class="col-12 col-md-5">
-							<h3 class="service-page-prices-item__title">Landing page</h3>
-							<p class="service-page-prices-item__subtitle">Сайт для продажи продукта или услуги</p>
-						</div>
-						<div class="col">
-							<div class="service-page-prices-item__price">от 120 000 руб.</div>
-						</div>
-						<div class="col-auto col-sm service-page-prices-item__order">
-							<a href="#contact" class="link-arrow js-go-to-form" data-form-message="Привет! Мне нужен лендинг для">Заказать</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="service-page-prices-item">
-					<div class="row">
-						<div class="col-12 col-md-5">
-							<h3 class="service-page-prices-item__title">Интернет-магазин</h3>
-						</div>
-						<div class="col">
-							<div class="service-page-prices-item__price">от 200 000 руб.</div>
-						</div>
-						<div class="col-auto col-sm service-page-prices-item__order">
-							<a href="#contact" class="link-arrow js-go-to-form" data-form-message="Привет! Хочу заказать интернет магазин.">Заказать</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="service-page-prices-item">
-					<div class="row">
-						<div class="col-12 col-md-5">
-							<h3 class="service-page-prices-item__title">Форумы, соцсети и порталы</h3>
+							<h3 class="service-page-prices-item__title">Приложение под ключ</h3>
+							<p class="service-page-prices-item__subtitle">Вы получите полностью готовое приложение</p>
 						</div>
 						<div class="col">
 							<div class="service-page-prices-item__price service-page-prices-item__price--undef">Срок и стоимость выясняются при обсуждении проекта</div>
 						</div>
 						<div class="col-auto col-sm service-page-prices-item__order">
-							<a href="#contact" class="link-arrow js-go-to-form" data-form-message="Привет! Хотел бы выяснить цену для своего проекта. Я хочу">Заказать</a>
+							<a href="#section-contact" class="link-arrow js-go-to-form" data-form-message="Привет! Хочу заказать дизайн интерфейса приложения">Заказать</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-page-prices-item">
+					<div class="row">
+						<div class="col-12 col-md-5">
+							<h3 class="service-page-prices-item__title">Дизайн интерфейса</h3>
+							<p class="service-page-prices-item__subtitle">Проектирование пользовательского опыта и разработка визуальной части интерфейса</p>
+						</div>
+						<div class="col">
+							<div class="service-page-prices-item__price">от 60 000 руб.</div>
+						</div>
+						<div class="col-auto col-sm service-page-prices-item__order">
+							<a href="#section-contact" class="link-arrow js-go-to-form" data-form-message="Привет! Хочу заказать дизайн интерфейса приложения">Заказать</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-page-prices-item">
+					<div class="row">
+						<div class="col-12 col-md-5">
+							<h3 class="service-page-prices-item__title">Разработка готовой идеи</h3>
+							<p class="service-page-prices-item__subtitle">Программирование уже спроектированного интерфейса</p>
+						</div>
+						<div class="col">
+							<div class="service-page-prices-item__price">от 120 000 руб.</div>
+						</div>
+						<div class="col-auto col-sm service-page-prices-item__order">
+							<a href="#section-contact" class="link-arrow js-go-to-form" data-form-message="Привет! Хочу заказать разработку приложения по уже имеющемуся дизайну">Заказать</a>
 						</div>
 					</div>
 				</div>
@@ -191,7 +168,7 @@
 </article>
 
 
-<footer id="contact" class="footer">
+<footer id="section-contact" class="footer">
 <div class="container">
 <div class="footer-inner">	
 <div class="row">
@@ -224,9 +201,26 @@
 			<input type="submit" class="link-arrow" value="Отправить заявку">
 		</div>
 
-		<div class="contact-form-result contact-form-result--success formSuccess"><div class="contact-form-result__inner"><p><b>Заявка успешно отправлена!</b>Мы свяжемся с вами как можно скорее.</p></div></div>
-		<div class="contact-form-result contact-form-result--fail formFail"><div class="contact-form-result__inner"><p><b>Ошибка!</b>Форма сломалась или устала. Попробуйте связаться с нами одним из других контактов, указанных на этой странице.</p></div></div>
-		<div class="contact-form-result contact-form-result--notfilled formNotFilled"><div class="contact-form-result__inner"><p><b>Форма не заполнена!</b>Если вам никак не удается заполнить форму, попробуйте связаться с нами одним из других контактов, указанных на этой странице.</p></div></div>
+		<div class="contact-form-result contact-form-result--success formSuccess">
+			<div class="contact-form-result__inner">
+				<h4>Заявка успешно отправлена!</h4>
+				<p>Мы свяжемся с вами как можно скорее.</p>
+			</div>
+		</div>
+
+		<div class="contact-form-result contact-form-result--fail formFail">
+			<div class="contact-form-result__inner">
+				<h4>Ошибка!</h4>
+				<p>Форма сломалась или устала. Попробуйте связаться с нами одним из других контактов, указанных на этой странице.</p>
+			</div>
+		</div>
+
+		<div class="contact-form-result contact-form-result--notfilled formNotFilled">
+			<div class="contact-form-result__inner">
+				<h4>Форма не заполнена!</h4>
+				<p>Если вам никак не удается заполнить форму, попробуйте связаться с нами одним из других контактов, указанных на этой странице.</p>
+			</div>
+		</div>
 
 	</form>
 </div>
@@ -237,8 +231,8 @@
 </div>
 </footer>
 
-<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="js/main.js?v=2.4"></script>
+<script src="plugins/jquery-3.2.1.min.js"></script>
+<script src="js/main.js?v=2.6"></script>
 
 </body>
 </html>

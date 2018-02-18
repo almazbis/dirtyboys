@@ -1,36 +1,35 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" id="html">
 <head>
 	<meta charset="utf-8">
 <title>indimedia - digital-студия</title>
 <meta name="description" content="«indimedia» - интернет рекламное агентство. Увеличиваем количество лидов и рост оборота за счет правильного продвижения."/>
 <meta name="keywords"  content="реклама питер, реклама москва, рекламное агентство, размещение рекламы, агентство рекламы,рекламное сопровождение бизнеса, медиа агентства, услуги рекламного агентства, медиапланирование, реклама в интернете, контекстная реклама," />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <link rel="icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,400i,500,600,700,700i,800,900&amp;subset=cyrillic" rel="stylesheet">
-<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,700i,800&amp;subset=cyrillic" rel="stylesheet"> -->
 <link href="https://fonts.googleapis.com/css?family=Tinos:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
 
-
 <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-<link rel="stylesheet" href="css/style.css?v=2.4">
+<link rel="stylesheet" href="css/style.css?v=2.8">
 </head>
 <body>
 
 
 <div class="grid-bg">
 	<div class="container">
-		<div class="row justify-content-between">
-			<div class="grid-bg__column col-auto"><span></span></div>
-			<div class="grid-bg__column col-auto"><span></span></div>
-			<div class="grid-bg__column col-auto"><span></span></div>
-			<div class="grid-bg__column col-auto"><span></span></div>
-			<div class="grid-bg__column col-auto"><span></span></div>
-			<div class="grid-bg__column col-auto"><span></span></div>
+		<div class="grid-bg__row">
+			<div class="grid-bg__column"><span></span></div>
+			<div class="grid-bg__column"><span></span></div>
+			<div class="grid-bg__column"><span></span></div>
+			<div class="grid-bg__column"><span></span></div>
+			<div class="grid-bg__column"><span></span></div>
+			<div class="grid-bg__column"><span></span></div>
 		</div>
 	</div>
 </div>
@@ -51,9 +50,9 @@
 				<div class="col-12 col-sm header-nav-col header-nav-col--menu">
 					<div class="menu js-menu-links">
 						<ul>
-							<li><a href="#">Услуги</a></li>
-							<li><a href="#">Портфолио</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="#section-services" class="smoothScroll">Услуги</a></li>
+							<li><a href="#section-portfolio" class="smoothScroll">Портфолио</a></li>
+							<li><a href="#section-contact" class="smoothScroll">Контакты</a></li>
 						</ul>
 					</div>
 				</div>
@@ -65,7 +64,10 @@
 	<div class="header-lead">
 		<div class="container">
 			<div class="header-lead__content">
-				<h1 class="header-lead__title"><span>Мы — <br />indimedia</span></h1>
+				<h1 class="header-lead__title">
+					<div id="header-slide-up-title" class="header-lead__front-title">Мы — <br />indimedia</div>
+					<div id="header-slide-up-title-bg" class="header-lead__back-title">Мы — <br />indimedia</div>
+				</h1>
 				<div class="header-lead__text">
 					<p>рекламное агентство. <br />Сможем наладить поток клиентов для вашего бизнеса используя все возможности интернета.</p>
 				</div>
@@ -77,7 +79,7 @@
 
 
 
-<section class="about">
+<section id="section-about" class="about">
 	<div class="container">
 		<article class="about__content">
 			<div class="about__text">
@@ -118,9 +120,8 @@
 
 	<div class="container">
 		<div class="services-row">
-
 			<div class="services-col">
-				<a href="services-marketing.html" class="services-item">
+				<a href="service-marketing.html" class="services-item js-ajax-load">
 					<div class="services-item__inner">
 						<img class="services-item__icon" src="assets/img/services-marketing.svg" alt="">
 						<div class="services-item__title">Интернет-маркетинг</div>
@@ -131,46 +132,44 @@
 					</div>
 				</a>
 			</div>
-
 			<div class="services-col">
-				<a href="services-gd.html" class="services-item">
+				<a href="service-gd.html" class="services-item js-ajax-load">
 					<div class="services-item__inner">
 						<img class="services-item__icon" src="assets/img/services-gd.svg" alt="">
 						<div class="services-item__title">Графический дизайн</div>
 						<div class="services-item__subtitle">Брендинг, фирменный стиль</div>
 						<div class="services-item__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum id iste maxime dolore vero earum cum rerum, distinctio omnis sed iure sapiente, autem magni pariatur expedita! Impedit udantium, fuga ipsam cum odit itaque! At esse hic, praesentium autem nostrum facere pariatur. Recusandae, similique rem. Ab itaque, ad inventore.</p>
+							<p>У каждой стремящейся к успеху компании должен быть свой фирменный стиль, который отражает ее жизненную миссию. Бизнесы без свой визуальной айдентики рискуют остаться никем и упустить множество возможностей.</p>
+							<p>Разработка фирменного стиля - одно из первых вещей, с которых бизнесу нужно начинать идти к успеху.</p>
 						</div>
 					</div>
 				</a>
 			</div>
-
 			<div class="services-col">
-				<a href="services-websites.html" class="services-item">
+				<a href="service-websites.html" class="services-item js-ajax-load">
 					<div class="services-item__inner">
 						<img class="services-item__icon" src="assets/img/services-websites.svg" alt="">
 						<div class="services-item__title">Сайты</div>
 						<div class="services-item__subtitle">Дизайн, разработка и продвижение сайтов</div>
 						<div class="services-item__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magni vitae impedit! Iure quibusdam delectus modi voluptas nisi! Harum pariatur ullam sequi delectus itaque et suscipit sed, aperiam illo eaque.</p>
+							<p>Мы делим проектную работу на этапы: проектирование и пнализ, разработка концепции дизайна, верстка и программирование интерфейса, разработка административной части, тестирование и сдача проекта.</p>
+							<p>Наша цель в UX/UI дизайне – сделать взаимодействие пользователя с продуктом как можно более простым и логичным.</p>
 						</div>
 					</div>
 				</a>
 			</div>
-
 			<div class="services-col">
-				<a href="services-apps.html" class="services-item">
+				<a href="service-apps.html" class="services-item js-ajax-load">
 					<div class="services-item__inner">
 						<img class="services-item__icon" src="assets/img/services-apps.svg" alt="">
 						<div class="services-item__title">Приложения</div>
 						<div class="services-item__subtitle">Дизайн и разработка мобильных приложений</div>
 						<div class="services-item__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique distinctio magni veritatis eveniet iusto a culpa sequi adipisci, velit accusasequi adipisci, velit accusantium impedit expedita iste, eligendi cum et facere porro ratione obcaecati!</p>
+							<p>В команде <b>indimedia</b> есть <span class="nowrap">UX/UI-дизайнеры</span> и разработчики, разбирающиеся в последних технологиях создания эффективных и работающих приложений.</p>
 						</div>
 					</div>
 				</a>
 			</div>
-
 		</div>
 	</div>
 
@@ -179,7 +178,7 @@
 
 
 
-<section id="portfolio" class="section home-portfolio">
+<section id="section-portfolio" class="section home-portfolio">
 
 	<div class="container"><h2 class="section-title">Последние работы</h2></div>
 
@@ -362,7 +361,7 @@
 
 
 
-<footer id="contact" class="footer">
+<footer id="section-contact" class="footer">
 <div class="container">
 <div class="footer-inner">	
 <div class="row">
@@ -395,9 +394,26 @@
 			<input type="submit" class="link-arrow" value="Отправить заявку">
 		</div>
 
-		<div class="contact-form-result contact-form-result--success formSuccess"><div class="contact-form-result__inner"><p><b>Заявка успешно отправлена!</b>Мы свяжемся с вами как можно скорее.</p></div></div>
-		<div class="contact-form-result contact-form-result--fail formFail"><div class="contact-form-result__inner"><p><b>Ошибка!</b>Форма сломалась или устала. Попробуйте связаться с нами одним из других контактов, указанных на этой странице.</p></div></div>
-		<div class="contact-form-result contact-form-result--notfilled formNotFilled"><div class="contact-form-result__inner"><p><b>Форма не заполнена!</b>Если вам никак не удается заполнить форму, попробуйте связаться с нами одним из других контактов, указанных на этой странице.</p></div></div>
+		<div class="contact-form-result contact-form-result--success formSuccess">
+			<div class="contact-form-result__inner">
+				<h4>Заявка успешно отправлена!</h4>
+				<p>Мы свяжемся с вами как можно скорее.</p>
+			</div>
+		</div>
+
+		<div class="contact-form-result contact-form-result--fail formFail">
+			<div class="contact-form-result__inner">
+				<h4>Ошибка!</h4>
+				<p>Форма сломалась или устала. Попробуйте связаться с нами одним из других контактов, указанных на этой странице.</p>
+			</div>
+		</div>
+
+		<div class="contact-form-result contact-form-result--notfilled formNotFilled">
+			<div class="contact-form-result__inner">
+				<h4>Форма не заполнена!</h4>
+				<p>Если вам никак не удается заполнить форму, попробуйте связаться с нами одним из других контактов, указанных на этой странице.</p>
+			</div>
+		</div>
 
 	</form>
 </div>
@@ -408,8 +424,8 @@
 </div>
 </footer>
 
-<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="js/main.js?v=2.4"></script>
+<script src="plugins/jquery-3.2.1.min.js"></script>
+<script src="js/main.js?v=2.6"></script>
 
 </body>
 </html>

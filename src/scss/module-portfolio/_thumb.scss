@@ -13,8 +13,7 @@
 		width: 68px;
 		height: 12px;
 
-		transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-		transition-delay: .7s;
+		transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s;
 	}
 
 }
@@ -112,11 +111,14 @@
 		}
 	}
 
-	&:hover {
+	&:hover,
+	&:focus {
 		color: $black;
+		outline: none;
 
 		.portfolio-item-thumb {
 			opacity: .6;
+			// transform: scale(1.05);
 			// transform: translateY(-15px);
 		}
 
@@ -132,6 +134,8 @@
 			// transform: translateY(-25px);
 			left: 0;
 			opacity: 1;
+
+			transition: .1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.8s;
 		}
 
 	}

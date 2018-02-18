@@ -4,7 +4,7 @@
 		var formMessage = $(this).attr('data-form-message');
 
 		$('html, body').animate({
-		    scrollTop: $('#contact').offset().top
+		    scrollTop: $('#section-contact').offset().top
 		}, 600);
 		
 		$('#contact-message').val(formMessage);

@@ -6,6 +6,7 @@ var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync').create();
 var fileinclude = require('gulp-file-include');
 var uglify = require('gulp-uglify');
+var babel = require("gulp-babel");
  
 
 
@@ -29,6 +30,7 @@ gulp.task('fileinclude-js', function() {
       prefix: '@@',
       basepath: '@file'
     }))
+    .pipe(babel({presets: ['env']}))
     .pipe( uglify() )
     .pipe( gulp.dest('./build/js/') )
     .pipe( browserSync.stream({once: true}) );

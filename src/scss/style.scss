@@ -1,12 +1,12 @@
 @import 'vars';
 
 ::-moz-selection {
-  background: $black;
-  color: #fff;
+  background: darken($gray-light, 10%);
+  color: $black;
 }
 ::selection {
-  background: $black;
-  color: #fff;
+  background: darken($gray-light, 10%);
+  color: $black;
 }
 
 img {

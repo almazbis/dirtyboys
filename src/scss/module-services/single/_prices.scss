@@ -1,10 +1,10 @@
 .service-page-prices {
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 }
 
 .service-page-prices-item {
-	background-color: $gray-light;
+	background-color: rgba($gray-light, .8);
 
 	padding: 30px;
 	padding-bottom: 5px;
@@ -23,7 +23,11 @@
 
 	&__subtitle {
 		font-family: $font-text;
+		font-size: 15px;
+		line-height: 1.2;
 		opacity: .5;
+
+		max-width: 380px;
 	}
 
 	&__price {
@@ -48,7 +52,7 @@
 
 	.service-page-prices {
 		padding-top: 45px;
-		padding-bottom: 45px;
+		padding-bottom: 90px;
 	}
 
 }

@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	@@include('./includes/_header-slide-up-title.js');
+
 	@@include('./includes/smooth-scroll.js');
 
 	@@include('./includes/modals.js');

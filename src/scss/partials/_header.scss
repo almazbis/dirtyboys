@@ -42,29 +42,63 @@
 		position: relative;
 		z-index: 1;
 
-		> span {
+		// &::before {
+		// 	content: "Мы — indimedia";
+		// 	color: rgba($black, .04);
+
+		// 	display: block;
+		// 	position: absolute;
+		// 	z-index: -1;
+		// 	max-width: 360px;
+		// 	left: 40px;
+		// 	transform: scale(1.5);
+
+		// 	pointer-events: none;
+		// }
+
+	}
+
+	&__front-title {
 			background: -webkit-linear-gradient(45deg, #CC0F94, #F11C3E);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
+			opacity: 0;
 
 			display: block;
 			width: 100%;
-		}
 
-		&::before {
-			content: "Мы — indimedia";
+			transform: translateY(15px);
+
+			transition: $transition;
+
+			&.show {
+				opacity: 1;
+
+				transform: translateY(0);
+			}
+	}
+
+	&__back-title {
 			color: rgba($black, .04);
+			opacity: .7;
 
 			display: block;
 			position: absolute;
 			z-index: -1;
 			max-width: 360px;
+			top: -10px;
 			left: 40px;
 			transform: scale(1.5);
 
+			transition: $transition;
 			pointer-events: none;
-		}
+			user-select: none;
 
+			// &.show {
+			// 	opacity: 1;
+
+			// 	top: -10px;
+			// }
 	}
 
 	&__text {

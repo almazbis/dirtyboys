@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" id="html">
 <head>
 	@@include('./partials/head.html')
 </head>
@@ -10,7 +10,36 @@
 @@include('./partials/header.html')
 
 
-@@include('./components/services-links.html')
+<div class="services-links">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-lg">
+				<a href="service-marketing.html" class="services-links-item">
+					<div class="services-links-item__title">Интернет-маркетинг</div>
+					<div class="services-links-item__subtitle">Контекстная реклама, SMM, SEO</div>
+				</a>
+			</div>
+			<div class="col-12 col-sm-6 col-lg">
+				<a href="service-gd.html" class="services-links-item" tabindex="-1">
+					<div class="services-links-item__title">Графический дизайн</div>
+					<div class="services-links-item__subtitle">Брендинг, фирменный стиль</div>
+				</a>
+			</div>
+			<div class="col-12 col-sm-6 col-lg">
+				<a href="service-websites.html" class="services-links-item services-links-item--current">
+					<div class="services-links-item__title">Сайты</div>
+					<div class="services-links-item__subtitle">Дизайн, разработка и продвижение сайтов</div>
+				</a>
+			</div>
+			<div class="col-12 col-sm-6 col-lg">
+				<a href="service-apps.html" class="services-links-item">
+					<div class="services-links-item__title">Приложения</div>
+					<div class="services-links-item__subtitle">Дизайн и разработка мобильных приложений</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <article class="service-page">
@@ -19,11 +48,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-3 col-lg-4">
-					<h2 class="title">Сайты</h2>
+					<h2 class="title">Дизайн и разработка сайтов</h2>
 				</div>
 				<div class="col-12 col-md">
 					<div class="service-page-about__text">
-						<p>Мы делим проектную работу на этапы: Проектирование и Анализ, разработка концепции дизайна верстка и программирование интерфейса, Программирование административной части, тестирование и сдача проекта.</p>
+						<p>Мы делим проектную работу на этапы: проектирование и пнализ, разработка концепции дизайна, верстка и программирование интерфейса, разработка административной части, тестирование и сдача проекта.</p>
 						<p>Наша цель в UX/UI дизайне – сделать взаимодействие пользователя с продуктом как можно более простым и логичным.</p>
 						<p>Прототипирование – лучший способ оценить удобство пользования и логику нового интерфейса. В дальнейшем работа над дизайн-концепцией проекта будет основываться на разработанных прототипах.</p>
 					</div>
@@ -35,7 +64,6 @@
 
 	<div class="service-page-prices">
 		<div class="container">
-			<div class="section-title-2">Цены:</div>
 
 			<div class="service-page-prices__items">
 
@@ -49,7 +77,7 @@
 							<div class="service-page-prices-item__price">от 60 000 руб.</div>
 						</div>
 						<div class="col-auto col-sm service-page-prices-item__order">
-							<a href="#contact" class="link-arrow js-go-to-form" data-form-message="Привет! Хочу заказать сайт-визитку для">Заказать</a>
+							<a href="#section-contact" class="link-arrow js-go-to-form" data-form-message="Привет! Хочу заказать сайт-визитку для">Заказать</a>
 						</div>
 					</div>
 				</div>
@@ -64,7 +92,7 @@
 							<div class="service-page-prices-item__price">от 120 000 руб.</div>
 						</div>
 						<div class="col-auto col-sm service-page-prices-item__order">
-							<a href="#contact" class="link-arrow js-go-to-form" data-form-message="Привет! Мне нужен лендинг для">Заказать</a>
+							<a href="#section-contact" class="link-arrow js-go-to-form" data-form-message="Привет! Мне нужен лендинг для">Заказать</a>
 						</div>
 					</div>
 				</div>
@@ -78,7 +106,7 @@
 							<div class="service-page-prices-item__price">от 200 000 руб.</div>
 						</div>
 						<div class="col-auto col-sm service-page-prices-item__order">
-							<a href="#contact" class="link-arrow js-go-to-form" data-form-message="Привет! Хочу заказать интернет магазин.">Заказать</a>
+							<a href="#section-contact" class="link-arrow js-go-to-form" data-form-message="Привет! Хочу заказать интернет магазин.">Заказать</a>
 						</div>
 					</div>
 				</div>
@@ -92,7 +120,7 @@
 							<div class="service-page-prices-item__price service-page-prices-item__price--undef">Срок и стоимость выясняются при обсуждении проекта</div>
 						</div>
 						<div class="col-auto col-sm service-page-prices-item__order">
-							<a href="#contact" class="link-arrow js-go-to-form" data-form-message="Привет! Хотел бы выяснить цену для своего проекта. Я хочу">Заказать</a>
+							<a href="#section-contact" class="link-arrow js-go-to-form" data-form-message="Привет! Хотел бы выяснить цену для своего проекта. Я хочу">Заказать</a>
 						</div>
 					</div>
 				</div>
