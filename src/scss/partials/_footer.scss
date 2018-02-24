@@ -83,3 +83,26 @@
 }
 
 
+
+
+
+//////////////////////////////////////////////////
+// LOGO
+////////////////////////////////////////////////
+
+.footer-logo {
+	text-align: center;
+
+	margin-top: 90px;
+	margin-bottom: 15px;
+
+	img {
+		opacity: .2;
+
+		width: 16px;
+
+		user-select: none;
+		user-drag: none; 
+		pointer-events: none;
+	}
+}

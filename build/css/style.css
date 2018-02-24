@@ -530,7 +530,9 @@ img.img-shadow {
 .menu a {
   font-weight: bold;
   text-decoration: none;
-  color: #1F252D;
+  color: #f31c62;
+  display: block;
+  position: relative;
   -webkit-transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
@@ -538,6 +540,27 @@ img.img-shadow {
 .menu a:hover, .menu a:focus {
   text-decoration: none;
   color: #f31c62;
+  outline: none;
+}
+
+.menu a::after {
+  content: '';
+  background-color: #0755C0;
+  mix-blend-mode: multiply;
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.menu a:hover::after, .menu a:focus::after {
+  width: 100%;
 }
 
 .header-nav {
@@ -1131,6 +1154,23 @@ img.img-shadow {
 .footer-contacts__tg a {
   background-image: url(../assets/icons/contact-tg.svg);
   background-size: 1.3em;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  opacity: .2;
+  width: 16px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  user-drag: none;
+  pointer-events: none;
 }
 
 .about {
