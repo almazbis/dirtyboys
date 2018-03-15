@@ -10,6 +10,13 @@
 		// font-family: $font-text;
 	}
 
+	textarea {
+		width: 100%;
+		max-width: 100%;
+
+		resize: vertical;
+	}
+
 	&__submit {
 		margin-top: 45px;
 	}

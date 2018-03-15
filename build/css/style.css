@@ -600,6 +600,12 @@ img.img-shadow {
   margin-bottom: 20px;
 }
 
+.contact-form textarea {
+  width: 100%;
+  max-width: 100%;
+  resize: vertical;
+}
+
 .contact-form__submit {
   margin-top: 45px;
 }
