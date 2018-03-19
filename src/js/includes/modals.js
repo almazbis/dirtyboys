@@ -13,6 +13,7 @@ $('.input-text input, .input-text textarea').blur(function(){
 // services modals
 
 var modalsExpanded = 0;
+var parentModal = "";
 
 $('.modalTrigger').on('click', function(event){
   event.preventDefault();
