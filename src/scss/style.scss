@@ -183,13 +183,13 @@ img.img-shadow {
 @import 'global/btns-and-links';
 @import 'global/forms';
 
+@import 'components/grid-bg';
 @import 'components/logo';
 @import 'components/nav';
 @import 'components/form';
 @import 'components/mention';
 @import 'components/pagination';
 @import 'components/modal-page';
-@import 'grid-bg';
 
 @import 'partials/header';
 @import 'partials/footer';
@@ -201,3 +201,12 @@ img.img-shadow {
 // @import 'modules/blog';
 
 @import 'global/mods';
+
+
+#main {
+	opacity: 0;
+
+	&.loaded {
+		opacity: 1;
+	}
+}

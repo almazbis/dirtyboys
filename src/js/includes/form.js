@@ -1,3 +1,5 @@
+var theFormId = "contactForm";
+
 var mailResult = function(result, formid){
     
     if( result == 'fail' ) {
@@ -28,7 +30,7 @@ var mailResult = function(result, formid){
 }
 
 $(function(){
-    $('.contactForm').submit(function(e){
+    $('#contactForm').submit(function(e){
         e.preventDefault();
 
         theFormId = '#' + $(this).attr('id');
