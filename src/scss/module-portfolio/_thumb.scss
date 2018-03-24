@@ -74,15 +74,18 @@
 		font-size: 2.6em;
 		font-weight: 900;
 		line-height: 1.1;
+		color: darken(saturate($sec, 20%), 10%);
+
 		margin-bottom: 25px;
 
 		transition: .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	}
 
 	&__text {
+		margin-bottom: 25px;
+
 		transition: .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 		transition-delay: .1s;
-		margin-bottom: 25px;
 	}
 
 }
@@ -90,14 +93,16 @@
 .portfolio-item-inner {
 	$item: '.portfolio-item';
 
+	text-decoration: none;
 	color: $black;
+
 	display: flex;
-	max-width: 1000px;
-	margin: 0 auto;
 	position: relative;
 	z-index: 1;
+	max-width: 1000px;
+	margin: 0 auto;
+	
 	transition: .2s;
-	text-decoration: none;
 
 	&:hover, &:focus {
 		text-decoration: none;

@@ -1520,31 +1520,32 @@ img.img-shadow {
   font-size: 2.6em;
   font-weight: 900;
   line-height: 1.1;
+  color: #003e94;
   margin-bottom: 25px;
   -webkit-transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .portfolio-item__text {
+  margin-bottom: 25px;
   -webkit-transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   -webkit-transition-delay: .1s;
           transition-delay: .1s;
-  margin-bottom: 25px;
 }
 
 .portfolio-item-inner {
+  text-decoration: none;
   color: #1F252D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1000px;
-  margin: 0 auto;
   position: relative;
   z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
   -webkit-transition: .2s;
   transition: .2s;
-  text-decoration: none;
 }
 
 .portfolio-item-inner:hover, .portfolio-item-inner:focus {
